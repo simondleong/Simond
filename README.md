@@ -1,6 +1,6 @@
 # YeeDate - Matchmakers - CPP1
 
-One Paragraph of project description goes here
+Our project is a dating website called YeeDate. The objective of our website is to provide a platform where our users are connected and exposed to other users that fit their preferences of an ideal partner. What makes our dating website different to the others on the market is that we provide a monetary incentive for users to be able to meet someone on a date whom they normally wouldn’t get the opportunity to ask out in their daily lives. One user pays a specified amount to another user to then set a date.
 
 ## Group Member Information
 <pre>
