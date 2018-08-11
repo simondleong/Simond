@@ -3,9 +3,9 @@
 One Paragraph of project description goes here
 
 ## Group Member Information
-
+<pre>
 Student ID    Name<br />
-
+</pre>
 
 ## Getting Started
 
