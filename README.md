@@ -4,7 +4,11 @@ One Paragraph of project description goes here
 
 ## Group Member Information
 <pre>
-Student ID    Name<br />
+Kevin Wong – s3603055
+Simond Leong – s3481060
+Diren Alexander – s3327365
+Jovan Adiputra - s3713885
+Dennis Sebastian – s3704700
 </pre>
 
 ## Getting Started
