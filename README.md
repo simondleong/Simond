@@ -4,7 +4,7 @@ One Paragraph of project description goes here
 
 ## Group Member Information
 
-Student ID&nbsp;Name<br />
+Student ID    Name<br />
 
 
 ## Getting Started
