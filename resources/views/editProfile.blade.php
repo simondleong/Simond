@@ -2,25 +2,15 @@
 
 @section('content')
 
-<!--=================================
- login-->
-
-<section class="login-form dark-bg page-section-ptb bg-overlay-black-30 bg" style="background: url(images/pattern/02.png) no-repeat 0 0;">
+<section class="page-section-ptb">
     <div class="container">
+        <div class="row">
 
-        @if (session()->has('flash_error'))
-            <div class="row justify-content-center">
-                <div class="col-md-6 alert alert-danger text-center">
-                    {{ session()->get('flash_error') }}
-                </div>
-            </div>
-        @endif
+            @include('sidebar')
 
-        <div class="row  justify-content-center">
-            <div class="col-md-6">
-                <div class="login-1-form register-1-form clearfix">
-                    <form method="post" action="/register">
-                        <h4 class="title divider-3 mb-3 text-white">sign up</h4>
+            <div class="col-md-8">
+                <div class="edit-form clearfix">
+                    <form method="put" action="/profile">
                         {{ csrf_field() }}
                         <div class="section-field mb-3">
                             <div class="field-widget"> <i class="glyph-icon flaticon-user"></i>
@@ -35,16 +25,6 @@
                         <div class="section-field mb-3">
                             <div class="field-widget"> <i class="fa fa-envelope-o" aria-hidden="true"></i>
                                 <input id="email" class="web" type="email" placeholder="Email" name="email" required>
-                            </div>
-                        </div>
-                        <div class="section-field mb-3">
-                            <div class="field-widget"> <i class="glyph-icon flaticon-padlock"></i>
-                                <input id="Password" class="web" type="password" placeholder="Password" name="password" required>
-                            </div>
-                        </div>
-                        <div class="section-field mb-3">
-                            <div class="field-widget"> <i class="glyph-icon flaticon-padlock"></i>
-                                <input id="ConfirmPassword" class="web" type="password" placeholder="Confirm Password" name="confirm_password" required>
                             </div>
                         </div>
                         <div class="section-field mb-3">
@@ -103,19 +83,12 @@
                             </div>
                         </div>
                         <div class="clearfix"></div>
-                        <div class="section-field text-uppercase text-right mt-2"> <button class="button btn-lg btn-theme full-rounded animated right-icn" type="submit"><span>sign up<i class="glyph-icon flaticon-hearts" aria-hidden="true"></i></span></button> </div>
-                        <div class="clearfix"></div>
-                        <div class="section-field mt-2 text-center text-white">
-                            <p class="lead mb-0">Have an account? <a class="text-white" href="/login"> <u> Sign In!</u> </a></p>
-                        </div>
+                        <div class="section-field text-uppercase text-right mt-2"> <button class="button btn-lg btn-theme full-rounded animated right-icn" type="submit"><span>Update<i class="glyph-icon flaticon-hearts" aria-hidden="true"></i></span></button> </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
 </section>
-
-<!--=================================
- login-->
 
 @endsection

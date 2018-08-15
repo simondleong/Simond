@@ -84,7 +84,7 @@ Design and Developed by: potenzaglobalsolutions.com
 #header.fancy + .fullscreen {margin-bottom: 0; top: 0;}
 
 /*mega-menu*/
-.mega-menu .menu-logo { padding:19px 0 17px; } 
+.mega-menu .menu-logo { padding: 0 0 0 0; }
 .mega-menu.desktopTopFixed .menu-list-items .menu-logo > li > a img {height: 45px;}
 .mega-menu .menu-links > li > a { line-height:98px; text-transform: uppercase; font-size: 14px; font-weight:500;}
 .mega-menu .menu-links > li > a:before, .mega-menu .menu-links > li.active > a:before{-webkit-transition: all 0.7s ease-out 0s; -moz-transition: all 0.7s ease-out 0s; -ms-transition: all 0.7s ease-out 0s; -o-transition: all 0.7s ease-out 0s;
@@ -437,7 +437,7 @@ hr{border-style:dashed; border-color:#d5d5d5; margin:50px 0;}
 /* Responsive CSS */
 /*==================================================================================*/
 @media screen and (max-width:1200px) {
-.mega-menu .menu-logo {padding: 17px 0;}
+.mega-menu .menu-logo {padding: 0 0 0 0;}
 }
 
 @media screen and (max-width:992px) {

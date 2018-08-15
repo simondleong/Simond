@@ -64,7 +64,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8">
-                    <div class="footer-logo mb-2"> <img class="img-center" src="images/footer-logo.png" alt="" /> </div>
+                    <div class="footer-logo mb-2"> <img class="img-center" src="images/yeedate_logo.png" alt="" /> </div>
                     <div class="social-icons color-hover">
                         <ul>
                             <li class="social-facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -74,7 +74,7 @@
                             <li class="social-youtube"><a href="#"><i class="fa fa-youtube"></i></a></li>
                         </ul>
                     </div>
-                    <p class="text-white">© 2018  - Cupid Love All Right Reserved </p>
+                    <p class="text-white">© 2018  - Yeedate All Right Reserved </p>
                 </div>
             </div>
         </div>

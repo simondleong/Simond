@@ -7,6 +7,15 @@
 
 <section class="login-form dark-bg page-section-ptb bg-overlay-black-30 bg" style="background: url({{ asset('images/pattern/02.png') }}) no-repeat 0 0;">
     <div class="container">
+
+        @if (session()->has('flash_error'))
+            <div class="row justify-content-center">
+                <div class="col-md-6 alert alert-danger text-center">
+                    {{ session()->get('flash_error') }}
+                </div>
+            </div>
+        @endif
+
         <div class="row justify-content-center">
             <div class="col-md-6">
                 <div class="login-1-form clearfix text-center">

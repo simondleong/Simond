@@ -115,8 +115,6 @@
 @media screen and (max-width: 992px) {
   .mega-menu .menu-logo > li > a {
     line-height: normal;
-    padding-top: 16px;
-    padding-bottom: 16px;
     position: relative;
     z-index: 10;
     width: auto;
@@ -136,13 +134,9 @@
 }
 .mega-menu .menu-logo > li > a img {
   /*--------------------------------------- LOGO IMAGE ICON */
- /* width: 20px;
-  height: 20px;
-  position: absolute;
-  top: 0;
-  left: 15px;
-  bottom: 0;
-  margin: auto 0;*/
+  height: 100px;
+  width: auto;
+  margin: auto 0;
 }
 .mega-menu .menu-links {
   /*---------------------------------------- MENU LINKS */
@@ -155,6 +149,11 @@
   .mega-menu .menu-links {
     width: 100%;
     background: #fff;
+  }
+
+  .mega-menu .menu-logo > li > a img {
+    height: 72px;
+    width: auto;
   }
 }
 @media screen and (min-width: 993px) {
@@ -1847,7 +1846,7 @@
 .mega-menu .drop-down-multilevel li.activeTriggerMobile{background:none;}
 .mega-menu .drop-down-multilevel .drop-down-multilevel{background:rgba(255, 255, 255, 0.1); top:0; border:none;}
 
-/* Defualt Header */
+/* Default Header */
 .mega-menu .menu-mobile-collapse-trigger::before, 
 .mega-menu .menu-mobile-collapse-trigger::after, 
 .mega-menu .menu-mobile-collapse-trigger span{background:#ffffff;}

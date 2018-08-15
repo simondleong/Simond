@@ -6,7 +6,7 @@
  preloader -->
 
 <div id="preloader">
-    <div class="clear-loading loading-effect"><img src="images/loading.gif" alt="" /></div>
+    <div class="clear-loading loading-effect"><img src="images/yeedate_logo.png" alt="" /></div>
 </div>
 
 <section id="home-slider" class="fullscreen">
@@ -206,23 +206,6 @@
                         </div>
                     </li>
                 </ul>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="page-section-ptb pb-0 text-center our-app position-relative overflow-h" style="background: url(images/pattern/01.png) no-repeat 0 0; background-size: cover;">
-    <div class="timeline-inner" style="background: url(images/app-img.png);">
-        <div class="container-fluid h-100">
-            <div class="row justify-content-center mb-4">
-                <div class="col-md-8">
-                    <h2 class="title divider">Download Our App</h2>
-                </div>
-            </div>
-            <div class="row justify-content-center justify-content-lg-start h-75">
-                <div class="col-lg-8 col-md-12 align-self-center">
-                    <h2 class="title mb-3">Want ot find your match..!! <br/>
-                        Get our app now.</h2>
-                    <a class="button btn-dark btn-lg  full-rounded"><i class="fa fa-apple" aria-hidden="true"></i><span><span>available on the</span> app store</span></a> <a class="button btn-lg full-rounded white-bg text-dark"><img class="img-fluid mr-2" src="images/play-icon.png" alt=""><span><span>get it on</span> google play</span></a> </div>
             </div>
         </div>
     </div>
