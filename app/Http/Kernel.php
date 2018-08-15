@@ -45,6 +45,10 @@ class Kernel extends HttpKernel
         'AuthUser' => [
             \App\Http\Middleware\AuthUser::class,
         ],
+
+        'PreferenceCheck' => [
+            \App\Http\Middleware\PreferenceCheck::class,
+        ],
     ];
 
     /**

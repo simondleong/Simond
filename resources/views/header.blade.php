@@ -22,7 +22,7 @@
                             <li><a href="/register">register</a></li>
                             <li><a href="/login">login</a></li>
                         @else
-                            <li>Hi, {{ session()->get('user')->firstname }}</li>
+                            <li>Hi, {{ session()->get('user')->first_name }}</li>
                             <li><a href="/logout">Logout</a></li>
                         @endif
                     </ul>

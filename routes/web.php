@@ -23,10 +23,23 @@ Route::get('/login', function () {
     return view('login');
 });
 
+Route::post('/login', 'UserController@login');
+
+
 Route::group(['middleware' => ['AuthUser']], function () {
-    Route::get('/profile', 'UserController@showProfileForm');
-    Route::get('/preferences', 'UserController@showPreferencesForm');
-    Route::get('/password', function () {
-        return view('password');
+
+    Route::get('/preferences', 'PreferenceController@showPreferencesForm');
+    Route::post('/preferences', 'PreferenceController@update');
+
+    Route::group(['middleware' => ['PreferenceCheck']], function () {
+        Route::get('/profile', 'UserController@showProfileForm');
+        Route::post('/profile', 'UserController@updateProfile');
+
+        Route::get('/password', function () {
+            return view('password');
+        });
+        Route::post('/password', 'UserController@updatePassword');
+
+        Route::get('/logout', 'UserController@logout');
     });
 });

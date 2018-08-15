@@ -21,12 +21,8 @@
                                     <li><a href="index-3.html">Home v3</a></li>
                                 </ul>
                             </li>
-                            <li><a href="javascript:void(0)">Profiles <i class="fa fa-angle-down fa-indicator"></i></a>
-                                <!-- drop down multilevel  -->
-                                <ul class="drop-down-multilevel left-menu">
-                                    <li><a href="profile.html">Profiles 01</a></li>
-                                    <li><a href="profile-2.html">Profiles 02</a></li>
-                                </ul>
+                            <li>
+                                <a href="/profile">My Profile</a>
                             </li>
                             <li><a href="javascript:void(0)">Stories <i class="fa fa-angle-down fa-indicator"></i></a>
                                 <!-- drop down multilevel  -->

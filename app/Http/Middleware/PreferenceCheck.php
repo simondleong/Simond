@@ -4,7 +4,7 @@ namespace App\Http\Middleware;
 
 use Closure;
 
-class AuthUser
+class PreferenceCheck
 {
     /**
      * Handle an incoming request.
@@ -15,8 +15,8 @@ class AuthUser
      */
     public function handle($request, Closure $next)
     {
-        if (session()->has('user'))
-                return $next($request);
-        return redirect('/login')->with('flash_error', 'You are not logged in.');
+        if (session()->has('preference'))
+            return $next($request);
+        return redirect('/preferences')->with('flash_error', 'Please set your preferences first');
     }
 }

@@ -45,7 +45,9 @@ return [
         'Rejected',
         'Finished',
         'Cancelled'
-    ]
+    ],
+
+    'duplicate_email' => '23000'
 
 ];
 

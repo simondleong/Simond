@@ -24,12 +24,12 @@
                         {{ csrf_field() }}
                         <div class="section-field mb-3">
                             <div class="field-widget"> <i class="glyph-icon flaticon-user"></i>
-                                <input id="Firstname" name="firstname" class="web" type="text" placeholder="First name" required>
+                                <input id="Firstname" name="first_name" class="web" type="text" placeholder="First name" required>
                             </div>
                         </div>
                         <div class="section-field mb-3">
                             <div class="field-widget"> <i class="glyph-icon flaticon-user"></i>
-                                <input id="Lastname" name="lastname" class="web" type="text" placeholder="Last name" required>
+                                <input id="Lastname" name="last_name" class="web" type="text" placeholder="Last name" required>
                             </div>
                         </div>
                         <div class="section-field mb-3">

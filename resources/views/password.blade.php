@@ -9,8 +9,23 @@
                 @include('sidebar')
 
                 <div class="col-md-8">
+
+                    @if (session()->has('flash_error'))
+                        <div class="row justify-content-center">
+                            <div class="col-md-10 alert alert-danger text-center">
+                                {{ session()->get('flash_error') }}
+                            </div>
+                        </div>
+                    @elseif (session()->has('flash_success'))
+                        <div class="row justify-content-center">
+                            <div class="col-md-10 alert alert-success text-center">
+                                {{ session()->get('flash_success') }}
+                            </div>
+                        </div>
+                    @endif
+
                     <div class="edit-form clearfix">
-                        <form method="put" action="/profile">
+                        <form method="post" action="/password">
                             {{ csrf_field() }}
                             <div class="section-field mb-3">
                                 <div class="field-widget"> <i class="glyph-icon flaticon-padlock"></i>

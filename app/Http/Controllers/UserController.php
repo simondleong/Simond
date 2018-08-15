@@ -57,16 +57,6 @@ class UserController extends Controller
     }
 
     /*
-     * Returns preferences form with data from constants
-     */
-    public function showPreferencesForm() {
-        return view('preferences')->with('data', [
-            'personality_type' => $this->personality_type,
-            'age' => $this->age
-        ]);
-    }
-
-    /*
      * Processes registration
      */
     public function register(Request $request) {
@@ -78,8 +68,8 @@ class UserController extends Controller
         }
 
         $this->validate($request, [
-            'firstname' => 'required',
-            'lastname' => 'required',
+            'first_name' => 'required',
+            'last_name' => 'required',
             'email' => 'required|email',
             'password' => 'required',
             'phone' => 'required|numeric',
@@ -91,8 +81,8 @@ class UserController extends Controller
         ]);
 
         $user = [
-            "firstname" => $request->firstname,
-            "lastname" => $request->lastname,
+            "first_name" => $request->first_name,
+            "last_name" => $request->last_name,
             "email" => $request->email,
             "password" => Hash::make($request->password),
             "phone" => $request->phone,
@@ -106,12 +96,155 @@ class UserController extends Controller
         try {
             $user = $this->user->create($user);
         } catch (QueryException $e) {
-            session()->flash('flash_error', 'Registration Failed. Please contact our hotline if error persists.');
+            if ($e->getCode() == Config::get('constants.duplicate_email')) {
+                session()->flash('flash_error', 'Email has been used. Please use another email.');
+            } else {
+                session()->flash('flash_error', 'Registration Failed. Please contact our hotline if error persists.');
+            }
             return back();
         }
 
         session()->put('user', $user);
 
-        return view('homepage');
+        session()->flash('flash_success', 'You have successfully registered. Please enter your preferences.');
+
+        return redirect('/preferences');
+    }
+
+    public function login(Request $request) {
+
+        // make validator
+        $validator = Validator::make($request->all(), [
+            'email' => 'required',
+            'password' => 'required'
+        ]);
+
+        // validate input
+        if ($validator->fails()) {
+            return redirect()->back()->withInput($request->only('email'));
+        }
+
+        // get user data
+        $user = $this->attempt($request->email);
+
+        if ($user) {
+            // compare password
+            if (Hash::check($request->password, $user->password)) {
+                if (Hash::needsRehash($user->password)) {
+                    $user->password = $this->hash($request->password);
+                    $user = $this->update($user);
+                }
+
+                session()->put('user', $user);
+
+                if ($user->preference) {
+                    session()->put('preference', $user->preference);
+                    return redirect('/home');
+                }
+
+                session()->flash('flash_success', 'Please enter your preferences.');
+                return redirect('/preferences');
+            }
+
+            session()->flash('flash_error', 'Incorrect Email/Password');
+            return redirect()->back()->withInput($request->only('email'));
+        }
+
+        session()->flash('flash_error', 'User not found');
+        return redirect()->back();
+    }
+
+    /*
+     * Update user's password
+     */
+    public function updatePassword(Request $request) {
+        $user = session()->get('user');
+        $oldPassword = $request->old_password;
+        $newPassword = $request->new_password;
+        $confirmPassword = $request->confirm_password;
+
+        if (Hash::check($oldPassword, $user->password)) {
+            if ($newPassword == $confirmPassword) {
+                $user->password = $this->hash($newPassword);
+                $user = $this->update($user);
+
+                session()->put('user', $user);
+
+                return redirect()->back()->with('flash_success', 'Your password has been updated!');
+            }
+
+            return redirect()->back()->with('flash_error', 'New and Confirm Password Do Not Match!');
+        }
+
+        return redirect()->back()->with('flash_error', 'Invalid old password');
+    }
+
+    /*
+     * Update User's Profile
+     */
+    public function updateProfile(Request $request) {
+        $user = session()->get('user');
+
+        $this->validate($request, [
+            'first_name' => 'required',
+            'last_name' => 'required',
+            'email' => 'required|email',
+            'phone' => 'required|numeric',
+            'gender' => 'required|numeric',
+            'sexual_preference' => 'required|numeric',
+            'personality_type' => 'required|numeric',
+            'age' => 'required|numeric',
+            'city' => 'required|numeric'
+        ]);
+
+        $user->first_name = $request->first_name;
+        $user->last_name = $request->last_name;
+        $user->email = $request->email;
+        $user->phone = $request->phone;
+        $user->gender = $request->gender;
+        $user->sexual_preference = $request->sexual_preference;
+        $user->personality_type = $request->personality_type;
+        $user->age = $request->age;
+        $user->city = $request->city;
+
+        $user = $this->update($user);
+
+        session()->put('user', $user);
+
+        return redirect()->back()->with('flash_success', 'Your profile has been updated!');
+    }
+
+    /*
+     * Logs out and clears session
+     */
+    public function logout() {
+        session()->flush();
+
+        return redirect('/');
+    }
+
+    /*
+     * Hash password
+     */
+    private function hash($password) {
+        return Hash::make($password);
+    }
+
+    /*
+     * Attempt to find user data
+     */
+    private function attempt($email) {
+        $user = $this->user->where('email', '=', $email)->first();
+
+        return $user;
+    }
+
+    /*
+     * Update user
+     */
+    private function update($user) {
+        $user->save();
+
+        return $user;
     }
 }
