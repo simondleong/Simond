@@ -40,6 +40,11 @@ Route::group(['middleware' => ['AuthUser']], function () {
         });
         Route::post('/password', 'UserController@updatePassword');
 
+        /* photos routes */
+        Route::get('/photos', function () {
+            return view('photo');
+        });
+
         Route::get('/logout', 'UserController@logout');
     });
 });
