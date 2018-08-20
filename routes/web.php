@@ -32,13 +32,24 @@ Route::group(['middleware' => ['AuthUser']], function () {
     Route::post('/preferences', 'PreferenceController@update');
 
     Route::group(['middleware' => ['PreferenceCheck']], function () {
+        /* profile routes */
         Route::get('/profile', 'UserController@showProfileForm');
         Route::post('/profile', 'UserController@updateProfile');
+        /* end of profile routes */
 
+        /* password routes */
         Route::get('/password', function () {
             return view('password');
         });
         Route::post('/password', 'UserController@updatePassword');
+        /* end of password routes */
+
+        /* photos routes */
+        Route::get('/photos', function () {
+            return view('photo');
+        });
+
+        /* end of photo routes */
 
         Route::get('/logout', 'UserController@logout');
     });
