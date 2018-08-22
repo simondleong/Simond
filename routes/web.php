@@ -33,12 +33,12 @@ Route::group(['middleware' => ['AuthUser']], function () {
 
     Route::group(['middleware' => ['PreferenceCheck']], function () {
         /* photos routes */
-        Route::get('/photos', function () {
-            return view('photo');
-        });
         Route::post('/photos/upload', 'PhotoController@upload');
         Route::post('/photos/set/{id}', 'PhotoController@setProfilePicture');
         Route::post('/photos/delete/{id}', 'PhotoController@deletePicture');
+        Route::get('/photos', function () {
+            return view('photo');
+        });
 
         Route::group(['middleware' => ['PhotoCheck']], function () {
             Route::get('/profile', 'UserController@showProfileForm');
