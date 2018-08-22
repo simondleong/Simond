@@ -79,7 +79,7 @@
                                 <h3 class="text-center text-black">You have reached the maximum number of photos!</h3>
                             @else
                                 <h2 class="text-black text-center">Image Upload</h2>
-                                <form action="/photos/upload/" method="post" enctype="multipart/form-data">
+                                <form action="/photos/upload" method="POST" enctype="multipart/form-data">
                                     <div class="section-field mb-3">
                                         <div class="field-widget"> <i class="fa fa-picture-o" aria-hidden="true"></i>
                                             <label>Select image to upload:</label>
