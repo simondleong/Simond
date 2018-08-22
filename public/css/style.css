@@ -452,7 +452,7 @@ hr{border-style:dashed; border-color:#d5d5d5; margin:50px 0;}
   Header 
 --------------------------------------------------*/
 #header.defualt { position: relative; background: #323232; }
-#header .topbar{display:none;}
+/*#header .topbar{display:none;}*/
 .mega-menu{min-height:80px;}
 .mega-menu .menu-logo{padding:0;}
 .mega-menu .menu-links > li{border-bottom-color:rgba(255,255,255,0.25); padding:0;}
@@ -460,6 +460,7 @@ hr{border-style:dashed; border-color:#d5d5d5; margin:50px 0;}
 .mega-menu .menu-links > li:last-child{border-bottom:none;}
 .mega-menu .menu-links > li.active > a{color:#ffbc05 !important;}
 .mega-menu .menu-links > li > a:hover:before{opacity: 0;}
+
 
 /* Defualt Header */
 .mega-menu .row > [class*='col-']:before, 
@@ -519,6 +520,7 @@ Comming soon Page
 --------------------------------------------------*/
 .mega-menu{min-height:70px;}
 .mega-menu .menu-logo img{height:30px;}
+#contact { display:none; }
 
 /*-------------------------------------------------
  footer  

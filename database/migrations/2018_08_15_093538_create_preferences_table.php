@@ -17,7 +17,11 @@ class CreatePreferencesTable extends Migration
             $table->increments('id');
             $table->unsignedInteger('user_id');
             $table->unsignedInteger('personality_type');
+            $table->unsignedInteger('personality_weight');
             $table->unsignedInteger('age');
+            $table->unsignedInteger('age_weight');
+            $table->unsignedInteger('city');
+            $table->unsignedInteger('city_weight');
             $table->timestamps();
         });
 

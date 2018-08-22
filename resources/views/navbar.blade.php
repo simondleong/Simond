@@ -31,53 +31,6 @@
                                     <li><a href="stories-2.html">Stories 02</a></li>
                                 </ul>
                             </li>
-                            <li><a href="javascript:void(0)"> Pages <i class="fa fa-angle-down fa-indicator"></i></a>
-                                <!-- drop down full width -->
-                                <div class="drop-down grid-col-12">
-                                    <!--grid row-->
-                                    <div class="grid-row">
-                                        <!--grid column 3-->
-                                        <div class="grid-col-3">
-                                            <ul>
-                                                <li><a href="about-1.html">About 01</a></li>
-                                                <li><a href="about-2.html"> About 02 </a></li>
-                                                <li><a href="team-1.html"> Team 01</a></li>
-                                                <li><a href="team-2.html"> Team 02</a></li>
-                                                <li><a href="team-single.html"> Team Single</a></li>
-                                            </ul>
-                                        </div>
-                                        <!--grid column 3-->
-                                        <div class="grid-col-3">
-                                            <ul>
-                                                <li><a href="faqs-1.html"> Faqs 01</a></li>
-                                                <li><a href="faqs-2.html"> Faqs 02</a></li>
-                                                <li><a href="contact-1.html"> Contact 01</a></li>
-                                                <li><a href="contact-2.html"> Contact 02</a></li>
-                                                <li><a href="contact-3.html"> Contact 03</a></li>
-                                            </ul>
-                                        </div>
-                                        <!--grid column 3-->
-                                        <div class="grid-col-3">
-                                            <ul>
-                                                <li><a href="login.html">Login 01</a></li>
-                                                <li><a href="login-2.html">Login 02</a></li>
-                                                <li><a href="register.html">Register 01</a></li>
-                                                <li><a href="register-2.html">Register 02</a></li>
-                                                <li><a href="step.html">Step</a></li>
-                                            </ul>
-                                        </div>
-                                        <!--grid column 3-->
-                                        <div class="grid-col-3">
-                                            <ul>
-                                                <li><a href="error-404.html"> 404 Error </a></li>
-                                                <li><a href="coming-soon.html">Coming Soon </a></li>
-                                                <li><a href="terms-conditions.html"> Terms Conditions</a></li>
-                                                <li><a href="privacy-policy.html"> Privacy Policy</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
                             <li><a href="javascript:void(0)"> Blog <i class="fa fa-angle-down fa-indicator"></i></a>
                                 <!-- drop down multilevel  -->
                                 <ul class="drop-down-multilevel left-menu">

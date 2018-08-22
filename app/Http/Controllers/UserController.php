@@ -138,7 +138,6 @@ class UserController extends Controller
                 session()->put('user', $user);
 
                 if ($user->preference) {
-                    session()->put('preference', $user->preference);
                     return redirect('/home');
                 }
 

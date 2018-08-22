@@ -4,7 +4,7 @@ namespace App\Http\Middleware;
 
 use Closure;
 
-class PreferenceCheck
+class PhotoCheck
 {
     /**
      * Handle an incoming request.
@@ -15,8 +15,8 @@ class PreferenceCheck
      */
     public function handle($request, Closure $next)
     {
-        if (session()->get('user')->preference != null)
+        if (!session()->get('user')->photos->isEmpty())
             return $next($request);
-        return redirect('/preferences')->with('flash_error', 'Please set your preferences first');
+        return redirect('/photos')->with('flash_error', 'Please upload a photo first!');
     }
 }

@@ -49,6 +49,10 @@ class Kernel extends HttpKernel
         'PreferenceCheck' => [
             \App\Http\Middleware\PreferenceCheck::class,
         ],
+
+        'PhotoCheck' => [
+            \App\Http\Middleware\PhotoCheck::class,
+        ],
     ];
 
     /**

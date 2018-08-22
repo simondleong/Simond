@@ -1663,12 +1663,17 @@ h4{font-size:16px;}
 
 .picture-container > img {
     max-height: 200px;
-    max-weight: 200px;
+    max-width: 200px;
+}
+
+.picture-container > img:hover {
+    cursor: pointer;
 }
 
 .picture-button {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
 }
 
 /* Style the Image Used to Trigger the Modal */
@@ -1686,6 +1691,7 @@ h4{font-size:16px;}
     position: fixed; /* Stay in place */
     z-index: 999; /* Sit on top */
     padding-top: 100px; /* Location of the box */
+    padding-bottom: 50px;
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -1697,10 +1703,11 @@ h4{font-size:16px;}
 
 /* Modal Content (Image) */
 .modal-content {
-    margin: auto;
+    margin: 0 auto;
     display: block;
-    width: 80%;
+    width: 75%;
     max-width: 600px;
+    height: auto;
 }
 
 /* Add Animation - Zoom in the Modal */

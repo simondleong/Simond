@@ -32,19 +32,26 @@ Route::group(['middleware' => ['AuthUser']], function () {
     Route::post('/preferences', 'PreferenceController@update');
 
     Route::group(['middleware' => ['PreferenceCheck']], function () {
-        Route::get('/profile', 'UserController@showProfileForm');
-        Route::post('/profile', 'UserController@updateProfile');
-
-        Route::get('/password', function () {
-            return view('password');
-        });
-        Route::post('/password', 'UserController@updatePassword');
-
         /* photos routes */
         Route::get('/photos', function () {
             return view('photo');
         });
+        Route::post('/photos/upload', 'PhotoController@upload');
+        Route::post('/photos/set/{id}', 'PhotoController@setProfilePicture');
+        Route::post('/photos/delete/{id}', 'PhotoController@deletePicture');
 
+        Route::group(['middleware' => ['PhotoCheck']], function () {
+            Route::get('/profile', 'UserController@showProfileForm');
+            Route::post('/profile', 'UserController@updateProfile');
+
+            Route::get('/password', function () {
+                return view('password');
+            });
+            Route::post('/password', 'UserController@updatePassword');
+        });
+
+
+        /* logout route */
         Route::get('/logout', 'UserController@logout');
     });
 });
