@@ -41,10 +41,10 @@ class PreferenceController extends Controller
     public function update(Request $request) {
         $user = session()->get('user');
 
-        if (session()->has('preference')) {
+        if ($user->preference) {
             // update existing
 
-            $preference = session()->get('preference');
+            $preference = $user->preference;
 
             $preference->personality_type = $request->personality_type;
             $preference->age = $request->age;

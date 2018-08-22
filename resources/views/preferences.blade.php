@@ -32,8 +32,8 @@
                                 <select name="personality_type" class="web" required>
                                     <option disabled selected value>Personality Type</option>
                                     @foreach ($data['personality_type'] as $key=>$personality)
-                                        @if (session()->has('preference'))
-                                            @if (session()->get('preference')->personality_type == $key)
+                                        @if (session()->get('user')->preference != null)
+                                            @if (session()->get('user')->preference->personality_type == $key)
                                                 <option class="web" value="{{ $key }}" selected>{{ $personality }}</option>
                                             @else
                                                 <option class="web" value="{{ $key }}">{{ $personality }}</option>
@@ -50,8 +50,8 @@
                                 <select name="age" class="web" required>
                                     <option disabled selected value>Age</option>
                                     @foreach ($data['age'] as $key=>$age)
-                                        @if (session()->has('preference'))
-                                            @if (session()->get('preference')->age == $key)
+                                        @if (session()->get('user')->preference != null)
+                                            @if (session()->get('user')->preference->age == $key)
                                                 <option class="web" value="{{ $key }}" selected>{{ $age }}</option>
                                             @else
                                                 <option class="web" value="{{ $key }}">{{ $age }}</option>
