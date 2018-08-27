@@ -39,7 +39,7 @@
                                 <h3 class="text-center text-black">You have not uploaded any photo!</h3>
                             @else
                                 <h3 class="text-center text-black mb-4">Your Photos</h3>
-                            <!-- if user has photo(s) -->
+                                <!-- if user has photo(s) -->
                                 @foreach (session()->get('user')->photos as $key=>$photo)
                                     <div class="section-field mt-3">
                                         <div class="row">
@@ -79,14 +79,18 @@
                                 <h3 class="text-center text-black">You have reached the maximum number of photos!</h3>
                             @else
                                 <h2 class="text-black text-center">Image Upload</h2>
-                                <form action="/photos/upload" method="POST" enctype="multipart/form-data">
-                                    <div class="section-field mb-3">
-                                        <div class="field-widget"> <i class="fa fa-picture-o" aria-hidden="true"></i>
-                                            <label>Select image to upload:</label>
-                                            <input type="file" name="file" id="file" required>
+                                <form class="mt-4" action="/photos/upload" method="POST" enctype="multipart/form-data">
+                                    <div id="increment"  class="input-group mb-2">
+                                        <input id="file1" class="form-control" type="file" name="file[]"
+                                               onchange="sizeCheck(this, 1)" required>
+                                        <div class="btn-add">
+                                            <button class="btn btn-success" id="add" type="button">Add</button>
                                         </div>
                                     </div>
-                                    <div class="section-field text-uppercase text-right mt-2"> <button class="button btn-lg btn-theme full-rounded animated right-icn" type="submit"><span>Upload<i class="glyph-icon flaticon-hearts" aria-hidden="true"></i></span></button> </div>
+                                    <div id="upload-message" class="text-right text-danger mb-2 mt-2 text-big hidden">
+                                        File size is too big! (Max. 2MB)
+                                    </div>
+                                    <div class="section-field text-right mt-3"> <button id="upload-btn" class="button btn-lg btn-theme full-rounded animated right-icn" type="submit"><span>Upload<i class="glyph-icon flaticon-hearts" aria-hidden="true"></i></span></button> </div>
                                     {{ csrf_field() }}
                                 </form>
                             @endif
@@ -107,28 +111,15 @@
         <img class="modal-content" id="modal-img">
     </div>
 
-    <script>
-        // Get the modal
-        let a = document.getElementById('imageModal');
-        let modal = document.getElementById('imageModal');
-        a.parentNode.removeChild(a);
-        document.body.insertBefore(modal, document.body.childNodes[0]);
+    <script type="text/javascript" src="{{ asset('js/jquery.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/photo-upload/photo.js') }}"></script>
+    <script type="text/javascript">
+        /* ******************************************** */
+        /* THROWS VALUE TO THE JAVASCRIPT */
 
-        function showImage(element , i) {
-
-            // Get the image and insert it inside the modal - use its "alt" text as a caption
-            let img = document.getElementById(i);
-            let modalImg = document.getElementById("modal-img");
-
-            modal.style.display = "block";
-            modalImg.src = element.src;
-        }
-
-        let span = document.getElementsByClassName("close")[0];
-
-        span.onclick = function () {
-            modal.style.display = "none";
-        }
+        PHOTOCOUNT.init([{!! json_encode(count(session()->get('user')->photos)) !!}]);
+        /* ******************************************** */
     </script>
+
 
 @endsection

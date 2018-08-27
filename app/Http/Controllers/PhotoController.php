@@ -21,8 +21,12 @@ class PhotoController extends Controller
      */
     public function upload(Request $request) {
         $this->validate($request, [
-            'file' => 'required|image|mimes:jpeg,png,jpg|max:1024'
+            'file'      => 'required|array',
+            'file.*'    => 'required|image|mimes:jpeg,png,jpg|max:2048'
         ]);
+
+        $files = $request->file;
+        dd($files);
 
         // cache user credential
         $user       = session()->get('user');
