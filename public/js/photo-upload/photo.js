@@ -117,8 +117,9 @@ let PHOTOCOUNT = (function() {
 
     return {
         init: function(Args) {
-            _args = Args;
-            photocount = _args[0];
+            _args           = Args;
+            photocount      = _args[0];
+            maxPhotoCount   = maxPhotoCount - photocount;
         },
 
         total: function () {

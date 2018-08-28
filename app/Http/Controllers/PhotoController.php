@@ -26,25 +26,24 @@ class PhotoController extends Controller
         ]);
 
         $files = $request->file;
-        dd($files);
 
         // cache user credential
         $user       = session()->get('user');
 
         // get file and extension
-        $image      = $request->file('file');
-        $extension  = $image->getClientOriginalExtension();
-        $filename   = $this->generateFilename($user->id, $extension);
+        foreach ($files as $key=>$file) {
+            $extension  = $file->getClientOriginalExtension();
+            $filename   = $this->generateFilename($user->id, $key, $extension);
 
-        // create instance of model
-        $photo = $this->createInstance($user, $filename);
+            // create instance of model
+            $photo = $this->createInstance($user, $filename);
 
-        // store the photo
-        $path = $image->storePubliclyAs('/public/photos', $filename);
+            // store the photo to storage folder and to DB
+            $path = $file->storePubliclyAs('/public/photos', $filename);
+            $photo  = $photo->save();
+        }
 
-
-        // save data to database and update user credential in session
-        $photo  = $photo->save();
+        // update user credential in session
         $this->updateUserInfo($user);
 
         return redirect('/photos')->with('flash_success', 'Photo has been uploaded!');
@@ -120,12 +119,12 @@ class PhotoController extends Controller
     /*
      * generate filename
      */
-    private function generateFilename($id, $extension) {
+    private function generateFilename($id, $num, $extension) {
         // get user's credentials and current clock
         $now        = Carbon::now();
 
         // generate a new filename
-        $filename   = md5($now . $id);
+        $filename   = md5($now . $num . $id);
         $filename.= ('.' . $extension);
 
         return $filename;
