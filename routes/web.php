@@ -48,6 +48,11 @@ Route::group(['middleware' => ['AuthUser']], function () {
                 return view('password');
             });
             Route::post('/password', 'UserController@updatePassword');
+
+            /* homepage */
+            Route::get('/home', function () {
+                return view('homepage');
+            });
         });
 
 

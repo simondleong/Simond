@@ -164,9 +164,11 @@
     <div class="container">
         <div class="row justify-content-center mb-5 sm-mb-3">
             <div class="col-md-10 text-center">
-                <h2 class="title divider mb-3">Step to find your Soul Mate</h2>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed <br/>
-                    do eiusmod tempor incididunt ut labore et dolore magna</p>
+                <h2 class="title divider mb-3">Steps to Find Your New Date</h2>
+                <p class="lead">Are you looking to meet your soul mate? Somebody to simply talk to?
+                    Someone to enjoy a night out with? Or looking for someone new to 'Netflix and chill'
+                    with? Here in yeedate we help you find who you are looking for by telling us what
+                    you are looking for.</p>
             </div>
         </div>
         <div class="row justify-content-center">
@@ -179,7 +181,8 @@
                                 <h4 class="timeline-title divider-3">CREATE PROFILE</h4>
                             </div>
                             <div class="timeline-body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  enim ad minim veniam, quis</p>
+                                <p>Create a profile with all the details we ask for to help us connect you
+                                with the right people. Don't forget your photos!</p>
                             </div>
                         </div>
                     </li>
@@ -190,7 +193,8 @@
                                 <h4 class="timeline-title divider-3">Find match</h4>
                             </div>
                             <div class="timeline-body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  enim ad minim veniam, quis</p>
+                                <p>After you fill out our questionnaire, we will have a better idea of what you are
+                                    looking for. Our algorithm can then search for the right person to match you with.</p>
                             </div>
                         </div>
                     </li>
@@ -201,7 +205,8 @@
                                 <h4 class="timeline-title divider-3">START DATING</h4>
                             </div>
                             <div class="timeline-body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  enim ad minim veniam, quis</p>
+                                <p>Now all you have left is to choose who appeals to you and send a request to ask
+                                    them out on a date!</p>
                             </div>
                         </div>
                     </li>

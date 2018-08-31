@@ -36,7 +36,7 @@ class PhotoController extends Controller
             $filename   = $this->generateFilename($user->id, $key, $extension);
 
             // create instance of model
-            $photo = $this->createInstance($user, $filename);
+            $photo = $this->createInstance($user, $filename, $key);
 
             // store the photo to storage folder and to DB
             $path = $file->storePubliclyAs('/public/photos', $filename);
@@ -102,14 +102,14 @@ class PhotoController extends Controller
     /*
      * create instance of 'photo'
      */
-    private function createInstance($user, $filename) {
+    private function createInstance($user, $filename, $key) {
         $photo = new Photo;
 
         $photo->user_id         = $user->id;
         $photo->filename        = $filename;
         $photo->is_profile_pic  = false;
 
-        if ($user->photos->isEmpty()) {
+        if ($user->photos->isEmpty() && $key == 0) {
             $photo->is_profile_pic = true;
         }
 

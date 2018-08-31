@@ -2,6 +2,22 @@
 
 return [
 
+    'importance' => [
+        'Irrelevant',
+        'Somewhat Important',
+        'Important',
+        'Very Important',
+        'Mandatory'
+    ],
+
+    'importance_value' => [
+        0,
+        1,
+        5,
+        10,
+        20
+    ],
+
     'cities' => [
         'Altona',
         'Brighton Beach',
