@@ -105,7 +105,7 @@
                             <div class="field-widget"> <i class="fa fa-globe" aria-hidden="true"></i>
                                 <select name="city" class="web" required>
                                     <option disabled selected value>City</option>
-                                    @foreach ($data['cities'] as $key=>$city)
+                                    @foreach ($data['city'] as $key=>$city)
                                         @if (session()->get('user')->preference != null)
                                             @if (session()->get('user')->preference->city == $key)
                                                 <option class="web" value="{{ $key }}" selected>{{ $city }}</option>

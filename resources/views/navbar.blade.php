@@ -13,15 +13,13 @@
                         <!-- menu links -->
                         <ul class="menu-links">
                             <!-- active class -->
-                            <li class="active"><a href="javascript:void(0)"> Home <i class="fa fa-angle-down fa-indicator"></i></a>
-                                <!-- drop down multilevel  -->
-                                <ul class="drop-down-multilevel left-menu">
-                                    <li><a href="index-default.html">Home v1</a></li>
-                                    <li><a href="index-2.html">Home v2</a></li>
-                                    <li><a href="index-3.html">Home v3</a></li>
-                                </ul>
+                            <li class="{{ Request::is('home') ? "active" : null }}">
+                                <a href="/home">Home</a>
                             </li>
-                            <li>
+                            <li class="{{ Request::is('profile') ? "active" :
+                                            Request::is('password') ? "active" :
+                                                Request::is('preferences') ? "active" :
+                                                    Request::is('photos') ? "active" : null}}">
                                 <a href="/profile">My Profile</a>
                             </li>
                             <li><a href="javascript:void(0)">Stories <i class="fa fa-angle-down fa-indicator"></i></a>

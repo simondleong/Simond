@@ -53,6 +53,8 @@ Route::group(['middleware' => ['AuthUser']], function () {
             Route::get('/home', function () {
                 return view('homepage');
             });
+
+            Route::get('/match', 'MatchController@findMatch');
         });
 
 

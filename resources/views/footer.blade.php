@@ -5,7 +5,10 @@
                 <div class="row mb-5">
                     <div class="col-md-12">
                         <h2 class="title divider mb-3">Contact Us</h2>
-                        <p class="lead">Eum cu tantas legere complectitur, hinc utamur ea eam. Eum patrioque mnesarchum eu, diam erant convenire et vis. Et essent evertitur sea, vis cu ubique referrentur, sed eu dicant expetendis. Eum cu</p>
+                        <p class="lead">Have any questions? Need help understanding how things work here at yeedate?
+                        Do not hesitate to contact us through email or social media platforms and we will get to
+                        you ASAP!
+                        </p>
                     </div>
                 </div>
                 <div class="row mb-5 sm-mb-2">

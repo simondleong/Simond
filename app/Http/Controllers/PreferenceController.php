@@ -10,7 +10,7 @@ use App\Models\Preference;
 class PreferenceController extends Controller
 {
     protected $preference, $user;    // dependency injection
-    protected $config, $cities, $gender, $sexual_preferences, $personality_type, $age,
+    protected $config, $city, $gender, $sexual_preference, $personality_type, $age,
                 $importance, $importance_value, $date_status;
 
     /*
@@ -18,9 +18,9 @@ class PreferenceController extends Controller
      */
     public function __construct(User $user, Preference $preference) {
         $config = Config::get('constants');
-        $this->cities = $config['cities'];
+        $this->city = $config['city'];
         $this->gender = $config['gender'];
-        $this->sexual_preferences = $config['sexual_preferences'];
+        $this->sexual_preference = $config['sexual_preference'];
         $this->personality_type = $config['personality_type'];
         $this->age = $config['age'];
         $this->date_status = $config['date_status'];
@@ -39,7 +39,7 @@ class PreferenceController extends Controller
         return view('preferences')->with('data', [
             'personality_type'  => $this->personality_type,
             'age'               => $this->age,
-            'cities'              => $this->cities,
+            'city'            => $this->city,
             'importance'        => $this->importance,
             'imp_value'         => $this->importance_value
         ]);

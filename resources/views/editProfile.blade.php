@@ -69,7 +69,7 @@
                             <div class="field-widget"> <i class="fa fa-transgender" aria-hidden="true"></i>
                                 <select name="sexual_preference" class="web" required>
                                     <option disabled selected value>Sexual Preference</option>
-                                    @foreach ($data['sexual_preferences'] as $key=>$sex)
+                                    @foreach ($data['sexual_preference'] as $key=>$sex)
                                         @if ($key == session()->get('user')->sexual_preference)
                                             <option class="web" value="{{ $key }}" selected>{{ $sex }}</option>
                                         @else
@@ -111,7 +111,7 @@
                             <div class="field-widget"> <i class="fa fa-globe" aria-hidden="true"></i>
                                 <select name="city" class="web" required>
                                     <option disabled selected value>City</option>
-                                    @foreach ($data['cities'] as $key=>$city)
+                                    @foreach ($data['city'] as $key=>$city)
                                         @if ($key == session()->get('user')->city)
                                             <option class="web" value="{{ $key }}" selected>{{ $city }}</option>
                                         @else

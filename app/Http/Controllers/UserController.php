@@ -13,16 +13,16 @@ use App\Models\User;
 class UserController extends Controller
 {
     protected $user;    // dependency injection
-    protected $config, $cities, $gender, $sexual_preferences, $personality_type, $age, $date_status;
+    protected $city, $gender, $sexual_preference, $personality_type, $age, $date_status;
 
     /*
      * Constructor
      */
     public function __construct(User $user) {
         $config = Config::get('constants');
-        $this->cities = $config['cities'];
+        $this->city = $config['city'];
         $this->gender = $config['gender'];
-        $this->sexual_preferences = $config['sexual_preferences'];
+        $this->sexual_preference = $config['sexual_preference'];
         $this->personality_type = $config['personality_type'];
         $this->age = $config['age'];
         $this->date_status = $config['date_status'];
@@ -30,27 +30,29 @@ class UserController extends Controller
         $this->user = $user;
     }
 
+
     /*
      * Returns registration form with data from constants
      */
     public function showRegisterForm() {
         return view('register')->with('data', [
-            'cities' => $this->cities,
+            'city' => $this->city,
             'gender' => $this->gender,
-            'sexual_preferences' => $this->sexual_preferences,
+            'sexual_preference' => $this->sexual_preference,
             'personality_type' => $this->personality_type,
             'age' => $this->age
         ]);
     }
+
 
     /*
      * Returns profile form with data from constants
      */
     public function showProfileForm() {
         return view('editProfile')->with('data', [
-            'cities' => $this->cities,
+            'city' => $this->city,
             'gender' => $this->gender,
-            'sexual_preferences' => $this->sexual_preferences,
+            'sexual_preference' => $this->sexual_preference,
             'personality_type' => $this->personality_type,
             'age' => $this->age
         ]);
@@ -111,6 +113,9 @@ class UserController extends Controller
         return redirect('/preferences');
     }
 
+    /*
+     * Processes Login Request
+     */
     public function login(Request $request) {
 
         // make validator

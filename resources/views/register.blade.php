@@ -66,7 +66,7 @@
                             <div class="field-widget"> <i class="fa fa-transgender" aria-hidden="true"></i>
                                 <select name="sexual_preference" class="web" required>
                                     <option disabled selected value>Sexual Preference</option>
-                                    @foreach ($data['sexual_preferences'] as $key=>$sex)
+                                    @foreach ($data['sexual_preference'] as $key=>$sex)
                                         <option class="web" value="{{ $key }}">{{ $sex }}</option>
                                     @endforeach
                                 </select>
@@ -96,7 +96,7 @@
                             <div class="field-widget"> <i class="fa fa-globe" aria-hidden="true"></i>
                                 <select name="city" class="web" required>
                                     <option disabled selected value>City</option>
-                                    @foreach ($data['cities'] as $key=>$city)
+                                    @foreach ($data['city'] as $key=>$city)
                                         <option class="web" value="{{ $key }}">{{ $city }}</option>
                                     @endforeach
                                 </select>

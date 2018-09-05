@@ -18,7 +18,7 @@ return [
         20
     ],
 
-    'cities' => [
+    'city' => [
         'Altona',
         'Brighton Beach',
         'Broadmeadows',
@@ -37,12 +37,21 @@ return [
         'Other'
     ],
 
-    'sexual_preferences' => [
+    'Male'      => 0,
+    'Female'    => 1,
+    'Other'     => 2,
+
+    'sexual_preference' => [
         'Asexual',
         'Bisexual',
         'Straight',
         'Homosexual'
     ],
+
+    'Asexual'       => 0,
+    'Bisexual'      => 1,
+    'Straight'      => 2,
+    'Homosexual'    => 3,
 
     'personality_type' => [
         'Introvert',
