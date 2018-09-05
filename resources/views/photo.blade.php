@@ -112,7 +112,8 @@
     </div>
 
     <script type="text/javascript" src="{{ asset('js/jquery.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/photo-upload/photo.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/photo/modal.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/photo/photo.js') }}"></script>
     <script type="text/javascript">
         /* ******************************************** */
         /* THROWS VALUE TO THE JAVASCRIPT */

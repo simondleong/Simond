@@ -55,6 +55,8 @@ Route::group(['middleware' => ['AuthUser']], function () {
             });
 
             Route::get('/match', 'MatchController@findMatch');
+
+            Route::get('/profile/details/{id}', 'MatchController@viewProfile');
         });
 
 

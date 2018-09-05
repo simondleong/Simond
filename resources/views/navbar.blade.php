@@ -8,7 +8,7 @@
                     <div class="col-md-12">
                         <!-- menu logo -->
                         <ul class="menu-logo">
-                            <li> <a href="/"><img src="images/yeedate_logo.png" alt="logo" /> </a> </li>
+                            <li> <a href="/"><img src="{{ asset('images/yeedate_logo.png') }}" alt="logo" /> </a> </li>
                         </ul>
                         <!-- menu links -->
                         <ul class="menu-links">

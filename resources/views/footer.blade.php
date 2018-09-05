@@ -1,4 +1,4 @@
-<footer class="page-section-pt text-white text-center" style="background: url(images/pattern/04.png) no-repeat 0 0; background-size: cover;">
+<footer class="page-section-pt text-white text-center" style="background: url({{ asset('images/pattern/04.png') }}) no-repeat 0 0; background-size: cover;">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-10">
@@ -56,7 +56,7 @@
                                 <button id="submit" name="submit" type="submit" value="Send" class="button btn-lg btn-theme full-rounded animated right-icn"><span>Submit Now<i class="glyph-icon flaticon-hearts" aria-hidden="true"></i></span></button>
                             </div>
                         </form>
-                        <div id="ajaxloader" style="display:none"><img class="center-block" src="images/loading.gif" alt="" /></div>
+                        <div id="ajaxloader" style="display:none"><img class="center-block" src="{{ asset('images/loading.gif') }}" alt="" /></div>
                     </div>
                 </div>
             </div>
@@ -67,7 +67,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8">
-                    <div class="footer-logo mb-2"> <img class="img-center" src="images/yeedate_logo.png" alt="" /> </div>
+                    <div class="footer-logo mb-2"> <img class="img-center" src="{{ asset('images/yeedate_logo.png') }}" alt="" /> </div>
                     <div class="social-icons color-hover">
                         <ul>
                             <li class="social-facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>

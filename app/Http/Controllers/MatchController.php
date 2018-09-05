@@ -44,6 +44,22 @@ class MatchController extends Controller
 
 
     /*
+     * Returns Profile
+     */
+    public function viewProfile(Request $request) {
+        $match = $this->user->find($request->id);
+
+        return view('profile')->with('user', $match)->with('data', [
+            'city' => $this->city,
+            'gender' => $this->gender,
+            'sexual_preference' => $this->sexual_preference,
+            'personality_type' => $this->personality_type,
+            'age' => $this->age
+        ]);
+    }
+
+
+    /*
      * Finds Matches
      */
     public function findMatch(Request $request) {
