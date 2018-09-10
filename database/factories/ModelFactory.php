@@ -60,6 +60,10 @@ $factory->define(App\Models\Preference::class, function (Faker $faker) {
     $config = Config::get('constants');
     $weight = $config['importance_value'];
     return [
+        'gender'                => $faker->numberBetween(0, 2),
+        'gender_weight'         => $weight[$faker->numberBetween(0, 4)],
+        'sexual_preference'     => $faker->numberBetween(0, 2),
+        'sexual_weight'         => $weight[$faker->numberBetween(0, 4)],
         'personality_type'      => $faker->numberBetween(0, 2),
         'personality_weight'    => $weight[$faker->numberBetween(0, 4)],
         'age'                   => $faker->numberBetween(0, 2),

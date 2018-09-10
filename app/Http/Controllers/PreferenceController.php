@@ -37,9 +37,11 @@ class PreferenceController extends Controller
      */
     public function showPreferencesForm() {
         return view('preferences')->with('data', [
+            'gender'            => $this->gender,
+            'sexual_preference' => $this->sexual_preference,
             'personality_type'  => $this->personality_type,
             'age'               => $this->age,
-            'city'            => $this->city,
+            'city'              => $this->city,
             'importance'        => $this->importance,
             'imp_value'         => $this->importance_value
         ]);
@@ -89,6 +91,10 @@ class PreferenceController extends Controller
      *
      */
     private function setAttributes($preference, $request) {
+        $preference->gender             = $request->gender;
+        $preference->gender_weight      = $request->gender_weight;
+        $preference->sexual_preference  = $request->sexual_preference;
+        $preference->sexual_weight      = $request->sexual_weight;
         $preference->personality_type   = $request->personality_type;
         $preference->personality_weight = $request->personality_weight;
         $preference->age                = $request->age;

@@ -16,6 +16,10 @@ class CreatePreferencesTable extends Migration
         Schema::create('preferences', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedInteger('user_id');
+            $table->unsignedInteger('gender');
+            $table->unsignedInteger('gender_weight');
+            $table->unsignedInteger('sexual_preference');
+            $table->unsignedInteger('sexual_weight');
             $table->unsignedInteger('personality_type');
             $table->unsignedInteger('personality_weight');
             $table->unsignedInteger('age');

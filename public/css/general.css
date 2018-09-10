@@ -96,6 +96,12 @@ label {font-weight: 400; color: #aaaaaa; }
 .text-white h1, .text-white h2, .text-white h3, .text-white h4, .text-white h5, .text-white h6{color:#ffffff;}
 .text-white h1.text-yellow,.text-white h2.text-yellow, .text-white h3.text-yellow, .text-white h4.text-yellow, .text-white h5.text-yellow, .text-white h6.text-yellow{color:#ffbc05;}
 
+select {
+    -webkit-appearance: none;  /* for webkit (safari, chrome) compatibility */
+    -moz-appearance: none; /* for firefox compatibility */
+    appearance: none;
+}
+
 /***************************
 	 Typography
 ****************************/

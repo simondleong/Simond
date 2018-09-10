@@ -15,17 +15,21 @@ class MatchController extends Controller
     protected $user;
     protected $config, $city, $gender, $sexual_preference, $personality_type, $age, $date_status;
     protected $questions = [
+        'gender',
+        'sexual_preference',
         'personality_type',
         'age',
         'city'
     ];
     protected $weight = [
+        'gender_weight',
+        'sexual_weight',
         'personality_weight',
         'age_weight',
         'city_weight'
     ];
     protected $borderline = 50;
-    protected $totalQuestions = 3;
+    protected $totalQuestions = 0;
 
     /*
      * constructor
@@ -40,6 +44,8 @@ class MatchController extends Controller
         $this->personality_type = $this->config['personality_type'];
         $this->age = $this->config['age'];
         $this->date_status = $this->config['date_status'];
+
+        $this->totalQuestions = count($this->questions);
     }
 
 
@@ -101,12 +107,18 @@ class MatchController extends Controller
     private function calculate($user, $curr) {
         $userCounter = 0;
         $currCounter = 0;
-        $userDenominator = ($user->preference->personality_weight + $user->preference->age_weight +
+        $userDenominator = ($user->preference->gender_weight + $user->preference->sexual_weight +
+                            $user->preference->personality_weight + $user->preference->age_weight +
                             $user->preference->city_weight);
-        $currDenominator = ($curr->preference->personality_weight + $curr->preference->age_weight +
+        $currDenominator = ($curr->preference->gender_weight + $curr->preference->sexual_weight +
+                            $curr->preference->personality_weight + $curr->preference->age_weight +
                             $curr->preference->city_weight);
 
         // calculate user
+        if ($user->preference->gender == $curr->gender)
+            $userCounter += $user->preference->gender_weight;
+        if ($user->preference->sexual_preference == $curr->sexual_preference)
+            $userCounter += $user->preference->sexual_weight;
         if ($user->preference->personality_type == $curr->personality_type)
             $userCounter += $user->preference->personality_weight;
         if ($user->preference->age == $curr->age)
@@ -115,6 +127,10 @@ class MatchController extends Controller
             $userCounter += $user->preference->city_weight;
 
         // calculate curr
+        if ($curr->preference->gender == $user->gender)
+            $currCounter += $curr->preference->gender_weight;
+        if ($curr->preference->sexual_preference == $user->sexual_preference)
+            $currCounter += $curr->preference->sexual_weight;
         if ($curr->preference->personality_type == $user->personality_type)
             $currCounter += $curr->preference->personality_weight;
         if ($curr->preference->age == $user->age)

@@ -29,6 +29,80 @@
                         {{ csrf_field() }}
                         <div class="section-field mb-3">
                             <div class="field-widget"> <i class="fa fa-question" aria-hidden="true"></i>
+                                <select name="gender" class="web" required>
+                                    <option disabled selected value>Gender</option>
+                                    @foreach ($data['gender'] as $key=>$gender)
+                                        @if (session()->get('user')->preference != null)
+                                            @if (session()->get('user')->preference->gender == $key)
+                                                <option class="web" value="{{ $key }}" selected>{{ $gender }}</option>
+                                            @else
+                                                <option class="web" value="{{ $key }}">{{ $gender }}</option>
+                                            @endif
+                                        @else
+                                            <option class="web" value="{{ $key }}">{{ $gender }}</option>
+                                        @endif
+                                    @endforeach
+                                </select>
+                            </div>
+                            @foreach ($data['importance'] as $key=>$importance)
+                                <div class="form-check form-check-inline">
+                                    @if (session()->get('user')->preference != null)
+                                        @if (session()->get('user')->preference->gender_weight == $data['imp_value'][$key])
+                                            <input class="form-check-input" name="gender_weight" type="radio"
+                                                   id="importance{{ $key }}" value="{{ $data['imp_value'][$key] }}" checked>
+                                        @else
+                                            <input class="form-check-input" name="gender_weight" type="radio"
+                                                   id="importance{{ $key }}" value="{{ $data['imp_value'][$key] }}">
+                                        @endif
+                                    @else
+                                        <input class="form-check-input" name="gender_weight" type="radio"
+                                               id="importance{{ $key }}" value="{{ $data['imp_value'][$key] }}">
+                                    @endif
+                                    <label class="form-check-label" for="importance{{ $key }}">
+                                        {{ $importance }}
+                                    </label>
+                                </div>
+                            @endforeach
+                        </div>
+                        <div class="section-field mb-3">
+                            <div class="field-widget"> <i class="fa fa-question" aria-hidden="true"></i>
+                                <select name="sexual_preference" class="web" required>
+                                    <option disabled selected value>Sexual Preference</option>
+                                    @foreach ($data['sexual_preference'] as $key=>$sexual_preference)
+                                        @if (session()->get('user')->preference != null)
+                                            @if (session()->get('user')->preference->sexual_preference == $key)
+                                                <option class="web" value="{{ $key }}" selected>{{ $sexual_preference }}</option>
+                                            @else
+                                                <option class="web" value="{{ $key }}">{{ $sexual_preference }}</option>
+                                            @endif
+                                        @else
+                                            <option class="web" value="{{ $key }}">{{ $sexual_preference }}</option>
+                                        @endif
+                                    @endforeach
+                                </select>
+                            </div>
+                            @foreach ($data['importance'] as $key=>$importance)
+                                <div class="form-check form-check-inline">
+                                    @if (session()->get('user')->preference != null)
+                                        @if (session()->get('user')->preference->sexual_weight == $data['imp_value'][$key])
+                                            <input class="form-check-input" name="sexual_weight" type="radio"
+                                                   id="importance{{ $key }}" value="{{ $data['imp_value'][$key] }}" checked>
+                                        @else
+                                            <input class="form-check-input" name="sexual_weight" type="radio"
+                                                   id="importance{{ $key }}" value="{{ $data['imp_value'][$key] }}">
+                                        @endif
+                                    @else
+                                        <input class="form-check-input" name="sexual_weight" type="radio"
+                                               id="importance{{ $key }}" value="{{ $data['imp_value'][$key] }}">
+                                    @endif
+                                    <label class="form-check-label" for="importance{{ $key }}">
+                                        {{ $importance }}
+                                    </label>
+                                </div>
+                            @endforeach
+                        </div>
+                        <div class="section-field mb-3">
+                            <div class="field-widget"> <i class="fa fa-question" aria-hidden="true"></i>
                                 <select name="personality_type" class="web" required>
                                     <option disabled selected value>Personality Type</option>
                                     @foreach ($data['personality_type'] as $key=>$personality)
