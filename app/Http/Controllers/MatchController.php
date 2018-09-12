@@ -93,15 +93,6 @@ class MatchController extends Controller
 
 
     /*
-     * Sort by percentage
-     */
-    public function sort_by_percentage($a, $b) {
-        if ($a->percentage == $b->percentage) { return 0; }
-        return ($a->percentage < $b->percentage) ? -1 : 1;
-    }
-
-
-    /*
      * Calculates percentage
      */
     private function calculate($user, $curr) {

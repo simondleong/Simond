@@ -72,6 +72,22 @@ return [
         'Cancelled'
     ],
 
+    'Sent' => 0,
+    'Accepted' => 1,
+    'Rejected' => 2,
+    'Finished' => 3,
+    'Cancelled' => 4,
+
+    'confirmation' => [
+        'Not initiated yet',
+        'Met',
+        'No Meeting'
+    ],
+
+    'Not initiated yet' => 0,
+    'Met' => 1,
+    'No Meeting' => 2,
+
     'duplicate_email' => '23000'
 
 ];

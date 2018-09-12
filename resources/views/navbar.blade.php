@@ -22,11 +22,13 @@
                                                     Request::is('photos') ? "active" : null}}">
                                 <a href="/profile">My Profile</a>
                             </li>
-                            <li><a href="javascript:void(0)">Stories <i class="fa fa-angle-down fa-indicator"></i></a>
+                            <li class="{{ Request::is('dates/sent') ? "active" :
+                                            Request::is('dates/received') ? "active" : null}}">
+                                <a href="#">My Dates<i class="fa fa-angle-down fa-indicator"></i></a>
                                 <!-- drop down multilevel  -->
                                 <ul class="drop-down-multilevel left-menu">
-                                    <li><a href="stories.html">Stories 01</a></li>
-                                    <li><a href="stories-2.html">Stories 02</a></li>
+                                    <li><a href="/dates/sent">Sent</a></li>
+                                    <li><a href="/dates/received">Received</a></li>
                                 </ul>
                             </li>
                             <li><a href="javascript:void(0)"> Blog <i class="fa fa-angle-down fa-indicator"></i></a>

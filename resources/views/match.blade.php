@@ -2,9 +2,9 @@
 
 @section('content')
 
-    <section class="page-section-ptb ptb-100">
-        <div class="container ptb-60">
-            <div class="row">
+    <section class="page-section-ptb">
+        <div class="container ptb-60 pt-sm-3 pb-sm-3">
+            <div class="row flex-wrap">
                 @foreach($matches as $match)
                     <div class="col-md-4 col-sm-12 col-xs-12 mb-4">
                         <div class="profile-item-hover">
@@ -40,12 +40,23 @@
             </div>
 
 
-            <div class="row mt-6">
-                <div class="col-12 text-center">
-                    {{ $matches->links() }}
+            <div class="row no-gutters mt-6">
+                <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                    <nav class="d-flex justify-content-center">
+                        {{ $matches->links() }}
+                    </nav>
                 </div>
             </div>
         </div>
     </section>
+
+    <script type="text/javascript" src="{{ asset('js/jquery.min.js') }}"></script>
+    <script type="text/javascript">
+        let pagination = $('.pagination');
+        pagination.addClass('pagination-sm');
+        pagination.addClass('pagination-nav');
+        pagination.addClass('flex-sm-wrap');
+        pagination.addClass('flex-wrap');
+    </script>
 
 @endsection

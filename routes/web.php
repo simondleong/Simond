@@ -54,9 +54,20 @@ Route::group(['middleware' => ['AuthUser']], function () {
                 return view('homepage');
             });
 
+            /* match */
             Route::get('/match', 'MatchController@findMatch');
 
+            /* match profile */
             Route::get('/profile/details/{id}', 'MatchController@viewProfile');
+
+            /* request for date */
+            Route::post('/request-date', 'DateController@requestDate');
+
+            /* dates */
+            Route::get('/dates/sent', 'DateController@viewSent');
+            Route::get('/dates/received', 'DateController@viewReceived');
+            Route::get('/profile/date/{id}', 'DateController@viewDate');
+            Route::post('/date/{id}/update', 'DateController@update');
         });
 
 

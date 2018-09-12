@@ -8,17 +8,17 @@
 
             @include('sidebar')
 
-            <div class="col-md-8">
+            <div class="col-md-8 col-sm-12 col-xs-12">
 
                 @if (session()->has('flash_error'))
                     <div class="row justify-content-center">
-                        <div class="col-md-10 alert alert-danger text-center">
+                        <div class="col-md-10 col-sm-10 col-xs-10 mb-sm-3 alert alert-danger text-center">
                             {{ session()->get('flash_error') }}
                         </div>
                     </div>
                 @elseif (session()->has('flash_success'))
                     <div class="row justify-content-center">
-                        <div class="col-md-10 alert alert-success text-center">
+                        <div class="col-md-10 col-sm-10 col-xs-10 mb-sm-3 alert alert-success text-center">
                             {{ session()->get('flash_success') }}
                         </div>
                     </div>
@@ -124,6 +124,7 @@
                         <div class="clearfix"></div>
                         <div class="section-field text-uppercase text-right mt-2"> <button class="button btn-lg btn-theme full-rounded animated right-icn" type="submit"><span>Update<i class="glyph-icon flaticon-hearts" aria-hidden="true"></i></span></button> </div>
                     </form>
+                    <div class="clearfix"></div>
                 </div>
             </div>
         </div>

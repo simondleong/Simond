@@ -97,10 +97,10 @@ label {font-weight: 400; color: #aaaaaa; }
 .text-white h1.text-yellow,.text-white h2.text-yellow, .text-white h3.text-yellow, .text-white h4.text-yellow, .text-white h5.text-yellow, .text-white h6.text-yellow{color:#ffbc05;}
 
 select {
-    -webkit-appearance: none;  /* for webkit (safari, chrome) compatibility */
-    -moz-appearance: none; /* for firefox compatibility */
-    appearance: none;
-}
+     -webkit-appearance: none;  /* for webkit (safari, chrome) compatibility */
+     -moz-appearance: none; /* for firefox compatibility */
+     appearance: none;
+ }
 
 /***************************
 	 Typography
@@ -192,6 +192,8 @@ Page section margin padding
 .text-black{color:#3d3d3d;}
 .text-gray, .text-grey{color:#aaaaaa;}
 .text-yellow{color:#ffbc05;}
+.text-green{color:#28a745;}
+.text-red{color:#f34320;}
 
 /*************************
     Bg color

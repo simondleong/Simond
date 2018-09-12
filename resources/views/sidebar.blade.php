@@ -1,4 +1,4 @@
-<div class="col-md-4">
+<div class="col-md-4 col-sm-12 col-xs-12 mb-sm-4">
     <div class="table-responsive">
         <table class="table table-bordered text-center mb-0">
             <tbody>
