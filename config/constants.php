@@ -88,7 +88,11 @@ return [
     'Met' => 1,
     'No Meeting' => 2,
 
-    'duplicate_email' => '23000'
+    'duplicate_email' => '23000',
+
+    'currency'          => 'AUD',
+    'payment_amount'    => 20,
+    'shared_amount'     => 15
 
 ];
 
