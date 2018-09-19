@@ -18,7 +18,7 @@ class CreateDatesTable extends Migration
             $table->unsignedInteger('sender_id');
             $table->unsignedInteger('receiver_id');
             $table->unsignedInteger('status');
-            $table->unsignedInteger('sale_id');
+            $table->unsignedInteger('sale_id')->nullable(null);
             $table->unsignedInteger('payment_status');
             $table->unsignedInteger('sender_confirmation');
             $table->unsignedInteger('receiver_confirmation');
