@@ -18,6 +18,8 @@ class CreateDatesTable extends Migration
             $table->unsignedInteger('sender_id');
             $table->unsignedInteger('receiver_id');
             $table->unsignedInteger('status');
+            $table->unsignedInteger('sale_id');
+            $table->unsignedInteger('payment_status');
             $table->unsignedInteger('sender_confirmation');
             $table->unsignedInteger('receiver_confirmation');
             $table->timestamps();
@@ -25,12 +27,12 @@ class CreateDatesTable extends Migration
 
         Schema::table('dates', function (Blueprint $table) {
             $table->foreign('sender_id')
-                    ->references('id')->on('users')
-                    ->onDelete('cascade')->onUpdate('cascade');
+                ->references('id')->on('users')
+                ->onDelete('cascade')->onUpdate('cascade');
 
             $table->foreign('receiver_id')
-                    ->references('id')->on('users')
-                    ->onDelete('cascade')->onUpdate('cascade');
+                ->references('id')->on('users')
+                ->onDelete('cascade')->onUpdate('cascade');
         });
     }
 

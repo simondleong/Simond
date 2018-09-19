@@ -67,7 +67,11 @@ Route::group(['middleware' => ['AuthUser']], function () {
             Route::get('/dates/sent', 'DateController@viewSent');
             Route::get('/dates/received', 'DateController@viewReceived');
             Route::get('/profile/date/{id}', 'DateController@viewDate');
+            Route::get('/profile/date/{id}/process-payment', 'PaymentController@processPayment');
+            Route::get('/profile/date/{id}/execute', 'PaymentController@executePayment');
             Route::post('/date/{id}/update', 'DateController@update');
+            Route::post('/date/{id}/update-sender', 'PaymentController@updateSender');
+            Route::post('/date/{id}/update-receiver', 'PaymentController@updateReceiver');
         });
 
 
