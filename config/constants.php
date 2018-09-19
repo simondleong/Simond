@@ -72,11 +72,21 @@ return [
         'Cancelled'
     ],
 
-    'Sent' => 0,
-    'Accepted' => 1,
-    'Rejected' => 2,
-    'Finished' => 3,
+    'Sent'      => 0,
+    'Accepted'  => 1,
+    'Rejected'  => 2,
+    'Finished'  => 3,
     'Cancelled' => 4,
+
+    'payment_status' => [
+        'Unpaid',
+        'Paid',
+        'Refunded'
+    ],
+
+    'Unpaid'    => 0,
+    'Paid'      => 1,
+    'Refunded'  => 2,
 
     'confirmation' => [
         'Not initiated yet',
