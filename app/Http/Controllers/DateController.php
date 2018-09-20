@@ -40,7 +40,7 @@ class DateController extends Controller
         $date->sender_id = $user->id;
         $date->receiver_id = $receiver;
         $date->status = 0;
-        $date->sale_id = null;
+        $date->sale_id = 0;
         $date->payment_status = 0;
         $date->sender_confirmation = 0;
         $date->receiver_confirmation = 0;
