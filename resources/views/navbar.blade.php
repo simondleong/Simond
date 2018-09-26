@@ -13,8 +13,11 @@
                         <!-- menu links -->
                         <ul class="menu-links">
                             <!-- active class -->
-                            <li class="{{ Request::is('home') ? "active" : null }}">
-                                <a href="/home">Home</a>
+                            <li class="{{ Request::is('/') ? "active" : null }}">
+                                <a href="/">Home</a>
+                            </li>
+                            <li class="{{ Request::is('/find') ? "active" : null }}">
+                                <a href="/find">Find Matches</a>
                             </li>
                             <li class="{{ Request::is('profile') ? "active" :
                                             Request::is('password') ? "active" :

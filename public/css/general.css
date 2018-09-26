@@ -824,8 +824,8 @@ form .form-group textarea { resize: vertical; }
 .team-social-icon.float-right.social-icons.border {border: none !important;}
 .team-social-icon.social-icons.border li {margin-right: 15px; width: 16%;}
 .team-social-icon.social-icons.border li:last-child{margin-right: 0;}
-.team-images {overflow: hidden;}
-.team .team-images img{display:inline-block;transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out;}
+.team-images {overflow: hidden; width: 100%;}
+.team .team-images img{object-fit:cover; height: 360px; width: 100%; display:inline-block;transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out;}
 .team:hover .team-images img{-o-transform: scale(1.07); -ms-transform: scale(1.07); -moz-transform: scale(1.07); -webkit-transform: scale(1.07); transform: scale(1.07);}
 
 /*---------------------------
@@ -1365,7 +1365,7 @@ form .form-group .checkbox label, form .form-group .radio label { padding-left: 
       Team
     ---------------------------------------------------*/
     .team.left_pos{padding-left:0;}
-    .team.left_pos .team-images{height:330px; left:0; overflow:hidden; padding-top:15px;  position:relative; text-align:center; top:0; width:auto;}
+    .team.left_pos{height:330px; left:0; overflow:hidden; padding-top:15px;  position:relative; text-align:center; top:0; width:auto;}
     .team.left_pos .team-social-icon{position:relative; width:100%;}
     .counter label { font-size: 10px; }
     .story-details h5{ font-size: 14px; }
@@ -1577,7 +1577,7 @@ form .form-group .checkbox label, form .form-group .radio label { padding-left: 
       Team
     ---------------------------------------------------*/
     .team.left_pos{padding-left:0;}
-    .team.left_pos .team-images{height:330px; left:0; overflow:hidden; padding-top:15px;  position:relative; text-align:center; top:0; width:auto;}
+    .team.left_pos{height:330px; left:0; overflow:hidden; padding-top:15px;  position:relative; text-align:center; top:0; width:auto;}
     .team.left_pos .team-social-icon{position:relative; width:100%;}
 
 
@@ -1781,4 +1781,21 @@ form .form-group .checkbox label, form .form-group .radio label { padding-left: 
 
 .hidden {
     display: none;
+}
+
+.img-small {
+    height: 150px;
+    width: auto;
+}
+
+.no-decoration {
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width:767px) {
+    .img-small {
+        width: 100%;
+        height: auto;
+    }
 }

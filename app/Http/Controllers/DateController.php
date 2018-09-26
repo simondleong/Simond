@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Date as Date;
 use App\Models\User as User;
 use App\Models\Chat as Chat;
+use App\Support\Collection;
 use Illuminate\Support\Facades\Config;
 
 class DateController extends Controller
@@ -118,8 +119,17 @@ class DateController extends Controller
         $dates = $this->date->where('sender_id', $user->id)
                             ->orWhere('receiver_id', $user->id)
                             ->get();
+        $curr = [];
+        foreach ($dates as $date) {
+            if ($date->chat) {
+                array_push($curr, $date->chat);
+            }
+        }
+        $chats = (new Collection(collect($curr)->all()))->paginate(5);
 
-        return view('chatList')->with('dates', $dates);
+        return view('chatList')->with('chats', $chats)
+                                    ->with('user', session()->get('user'))
+                                    ->with('gender', $this->gender);
     }
 
 

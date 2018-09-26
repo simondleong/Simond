@@ -4,11 +4,11 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="keywords" content="HTML5 Template" />
-        <meta name="description" content="Cupid Love - Dating HTML5 Template" />
-        <meta name="author" content="potenzaglobalsolutions.com" />
+        <meta name="keywords" content="dating, match, dating web, find your match" />
+        <meta name="description" content="Yeedate is a dating web to find your perfect matches" />
+        <meta name="author" content="Jovan Adiputra" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Cupid Love Dating HTML5 Template</title>
+        <title>Yeedate - Dating Web</title>
 
         <!-- Favicon -->
         <link rel="shortcut icon" href="{{ asset('images/favicon.ico') }}"/>

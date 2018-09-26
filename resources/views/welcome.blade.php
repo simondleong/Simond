@@ -13,7 +13,7 @@
     <div id="main-slider" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <!--/ Carousel item end -->
-            <div class="carousel-item active h-100 bg-overlay-red" style="background: url(images/bg/bg-1.jpg ) no-repeat 0 0; background-size: cover;"  data-gradient-red="4" >
+            <div class="carousel-item active h-100 bg-overlay-red" style="background: url(images/bg/bg-1.jpeg ) no-repeat 0 0; background-size: cover;"  data-gradient-red="4" >
                 <div class="slider-content">
                     <div class="container">
                         <div class="row carousel-caption align-items-center h-100">
@@ -26,7 +26,7 @@
                     </div>
                 </div>
             </div>
-            <div class="carousel-item h-100 bg-overlay-red" style="background: url(images/bg/bg-2.jpg ) no-repeat 0 0; background-size: cover;"  data-gradient-red="4">
+            <div class="carousel-item h-100 bg-overlay-red" style="background: url(images/bg/bg-2.jpeg ) no-repeat 0 0; background-size: cover;"  data-gradient-red="4">
                 <div class="slider-content">
                     <div class="container">
                         <div class="row carousel-caption align-items-center h-100">
@@ -107,259 +107,259 @@
         </div>
     </div>
 </section>
-<section class="page-section-ptb  text-white" style="background: url(images/pattern/02.png) no-repeat 0 0; background-size: cover;">
-    <div class="container">
-        <div class="row justify-content-center mb-5 sm-mb-3">
-            <div class="col-md-8 text-center">
-                <h2 class="title divider">Animated Fun Facts</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-3 text-center">
-                <div class="counter"> <img src="images/counter/01.png" alt="" /> <span class="timer" data-to="1600" data-speed="10000">1600</span>
-                    <label>Total Members</label>
-                </div>
-            </div>
-            <div class="col-md-3 text-center">
-                <div class="counter"> <img src="images/counter/02.png" alt="" /> <span class="timer" data-to="750" data-speed="10000">750</span>
-                    <label>Online Members</label>
-                </div>
-            </div>
-            <div class="col-md-3 text-center">
-                <div class="counter"> <img src="images/counter/03.png" alt="" /> <span class="timer" data-to="380" data-speed="10000">380</span>
-                    <label>Men Online</label>
-                </div>
-            </div>
-            <div class="col-md-3 text-center">
-                <div class="counter"> <img src="images/counter/04.png" alt="" /> <span class="timer" data-to="370" data-speed="10000">370</span>
-                    <label>Women Online</label>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="page-section-ptb profile-slider pb-3 sm-pb-6">
-    <div class="container">
-        <div class="row justify-content-center mb-2 sm-mb-0">
-            <div class="col-md-8 text-center">
-                <h2 class="title divider">Last Added Profiles</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="owl-carousel" data-nav-arrow="true" data-items="4" data-lg-items="4" data-md-items="3" data-sm-items="2" data-space="30">
-                    <div class="item"> <a href="profile-details.html" class="profile-item">
-                            <div class="profile-image clearfix"><img class="img-fluid w-100" src="images/profile/01.jpg" alt="" /></div>
-                            <div class="profile-details text-center">
-                                <h5 class="title">Bill Nelson</h5>
-                                <span>23 Years Old</span> </div>
-                        </a> </div>
-                    <div class="item"> <a href="profile-details.html" class="profile-item">
-                            <div class="profile-image clearfix"><img class="img-fluid w-100" src="images/profile/02.jpg" alt="" /></div>
-                            <div class="profile-details text-center">
-                                <h5 class="title">Francisco Pierce</h5>
-                                <span>21 Years Old</span> </div>
-                        </a> </div>
-                    <div class="item"> <a href="profile-details.html" class="profile-item">
-                            <div class="profile-image clearfix"><img class="img-fluid w-100" src="images/profile/03.jpg" alt="" /></div>
-                            <div class="profile-details text-center">
-                                <h5 class="title">Nelle Townsend</h5>
-                                <span>19 Years Old</span> </div>
-                        </a> </div>
-                    <div class="item"> <a href="profile-details.html" class="profile-item">
-                            <div class="profile-image clearfix"><img class="img-fluid w-100" src="images/profile/04.jpg" alt="" /></div>
-                            <div class="profile-details text-center">
-                                <h5 class="title">Glen Bell</h5>
-                                <span>20 Years Old</span> </div>
-                        </a> </div>
-                    <div class="item"> <a href="profile-details.html" class="profile-item">
-                            <div class="profile-image clearfix"><img class="img-fluid w-100" src="images/profile/05.jpg" alt="" /></div>
-                            <div class="profile-details text-center">
-                                <h5 class="title">Bill Nelson</h5>
-                                <span>22 Years Old</span> </div>
-                        </a> </div>
-                    <div class="item"> <a href="profile-details.html" class="profile-item">
-                            <div class="profile-image clearfix"><img class="img-fluid w-100" src="images/profile/06.jpg" alt="" /></div>
-                            <div class="profile-details text-center">
-                                <h5 class="title">Francisco Pierce</h5>
-                                <span>23 Years Old</span> </div>
-                        </a> </div>
-                    <div class="item"> <a href="profile-details.html" class="profile-item">
-                            <div class="profile-image clearfix"><img class="img-fluid w-100" src="images/profile/07.jpg" alt="" /></div>
-                            <div class="profile-details text-center">
-                                <h5 class="title">Nelle Townsend</h5>
-                                <span>19 Years Old</span> </div>
-                        </a> </div>
-                    <div class="item"> <a href="profile-details.html" class="profile-item">
-                            <div class="profile-image clearfix"><img class="img-fluid w-100" src="images/profile/08.jpg" alt="" /></div>
-                            <div class="profile-details text-center">
-                                <h5 class="title">Glen Bell</h5>
-                                <span>22 Years Old</span> </div>
-                        </a> </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="page-section-ptb grey-bg story-slider">
-    <div class="container">
-        <div class="row justify-content-center mb-2 sm-mb-0">
-            <div class="col-md-8 text-center">
-                <h2 class="title divider">They Found True Love</h2>
-            </div>
-        </div>
-    </div>
-    <div class="owl-carousel" data-nav-dots="true" data-items="5" data-lg-items="4" data-md-items="3" data-sm-items="2" data-space="30">
-        <div class="item">
-            <div class="story-item">
-                <div class="story-image clearfix"><img class="img-fluid w-100" src="images/story/01.jpg" alt="" />
-                    <div class="story-link"><a href="stories-details.html"><i class="glyph-icon flaticon-add"></i></a></div>
-                </div>
-                <div class="story-details text-center">
-                    <h5 class="title divider-3">Quinnel &amp;amp; Jonet</h5>
-                    <div class="about-des mt-3">Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in</div>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="story-item">
-                <div class="story-image clearfix"><img class="img-fluid w-100" src="images/story/02.jpg" alt="" />
-                    <div class="story-link"><a href="stories-details.html"><i class="glyph-icon flaticon-add"></i></a></div>
-                </div>
-                <div class="story-details text-center">
-                    <h5 class="title divider-3">Adam &amp;amp; Eve</h5>
-                    <div class="about-des mt-3">Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in</div>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="story-item">
-                <div class="story-image clearfix"><img class="img-fluid w-100" src="images/story/03.jpg" alt="" />
-                    <div class="story-link"><a href="stories-details.html"><i class="glyph-icon flaticon-add"></i></a></div>
-                </div>
-                <div class="story-details text-center">
-                    <h5 class="title divider-3">Bella &amp;amp; Edward</h5>
-                    <div class="about-des mt-3">Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in</div>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="story-item">
-                <div class="story-image clearfix"><img class="img-fluid w-100" src="images/story/04.jpg" alt="" />
-                    <div class="story-link"><a href="stories-details.html"><i class="glyph-icon flaticon-add"></i></a></div>
-                </div>
-                <div class="story-details text-center">
-                    <h5 class="title divider-3">DEMI &amp;amp; HEAVEN</h5>
-                    <div class="about-des mt-3">Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in</div>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="story-item">
-                <div class="story-image clearfix"><img class="img-fluid w-100" src="images/story/05.jpg" alt="" />
-                    <div class="story-link"><a href="stories-details.html"><i class="glyph-icon flaticon-add"></i></a></div>
-                </div>
-                <div class="story-details text-center">
-                    <h5 class="title divider-3">David &amp;amp; Bathsheba</h5>
-                    <div class="about-des mt-3">Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in</div>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="story-item">
-                <div class="story-image clearfix"><img class="img-fluid w-100" src="images/story/06.jpg" alt="" />
-                    <div class="story-link"><a href="stories-details.html"><i class="glyph-icon flaticon-add"></i></a></div>
-                </div>
-                <div class="story-details text-center">
-                    <h5 class="title divider-3">Eros &amp;amp; Psychi</h5>
-                    <div class="about-des mt-3">Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in</div>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="story-item">
-                <div class="story-image clearfix"><img class="img-fluid w-100" src="images/story/07.jpg" alt="" />
-                    <div class="story-link"><a href="stories-details.html"><i class="glyph-icon flaticon-add"></i></a></div>
-                </div>
-                <div class="story-details text-center">
-                    <h5 class="title divider-3">Hector &amp;amp; Andromache</h5>
-                    <div class="about-des mt-3">Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in</div>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="story-item">
-                <div class="story-image clearfix"><img class="img-fluid w-100" src="images/story/08.jpg" alt="" />
-                    <div class="story-link"><a href="stories-details.html"><i class="glyph-icon flaticon-add"></i></a></div>
-                </div>
-                <div class="story-details text-center">
-                    <h5 class="title divider-3">Bonnie &amp;amp; Clyde</h5>
-                    <div class="about-des mt-3">Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in</div>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="story-item">
-                <div class="story-image clearfix"><img class="img-fluid w-100" src="images/story/09.jpg" alt="" />
-                    <div class="story-link"><a href="stories-details.html"><i class="glyph-icon flaticon-add"></i></a></div>
-                </div>
-                <div class="story-details text-center">
-                    <h5 class="title divider-3">Henry &amp;amp; Clare</h5>
-                    <div class="about-des mt-3">Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in</div>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="story-item">
-                <div class="story-image clearfix"><img class="img-fluid w-100" src="images/story/10.jpg" alt="" />
-                    <div class="story-link"><a href="stories-details.html"><i class="glyph-icon flaticon-add"></i></a></div>
-                </div>
-                <div class="story-details text-center">
-                    <h5 class="title divider-3">Casanova &amp;amp; Francesca</h5>
-                    <div class="about-des mt-3">Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in</div>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="story-item">
-                <div class="story-image clearfix"><img class="img-fluid w-100" src="images/story/11.jpg" alt="" />
-                    <div class="story-link"><a href="stories-details.html"><i class="glyph-icon flaticon-add"></i></a></div>
-                </div>
-                <div class="story-details text-center">
-                    <h5 class="title divider-3">Jack &amp;amp; Sally</h5>
-                    <div class="about-des mt-3">Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in</div>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="story-item">
-                <div class="story-image clearfix"><img class="img-fluid w-100" src="images/story/12.jpg" alt="" />
-                    <div class="story-link"><a href="stories-details.html"><i class="glyph-icon flaticon-add"></i></a></div>
-                </div>
-                <div class="story-details text-center">
-                    <h5 class="title divider-3">James &amp;amp; Lilly</h5>
-                    <div class="about-des mt-3">Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in</div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="page-section-ptb text-white bg-overlay-black-70 bg text-center" style="background: url(images/bg/bg-4.jpg) no-repeat 0 0; background-size: cover;">
-    <div class="container">
-        <div class="row justify-content-center mb-5 sm-mb-3">
-            <div class="col-md-10">
-                <h2 class="title divider mb-3">Nothing say better, then a video</h2>
-                <p class="lead">Eum cu tantas legere complectitur, hinc utamur ea eam. Eum patrioque mnesarchum eu, diam erant convenire et vis. Et essent evertitur sea, vis cu ubique referrentur, sed eu dicant expetendis.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <h5 class="title mb-3">see video</h5>
-                <div class="popup-gallery"> <a href="https://www.youtube.com/embed/8xg3vE8Ie_E" class="play-btn popup-youtube"> <span><i class="glyph-icon flaticon-play-button"></i></span></a> </div>
-            </div>
-        </div>
-    </div>
-</section>
+{{--<section class="page-section-ptb  text-white" style="background: url(images/pattern/02.png) no-repeat 0 0; background-size: cover;">--}}
+    {{--<div class="container">--}}
+        {{--<div class="row justify-content-center mb-5 sm-mb-3">--}}
+            {{--<div class="col-md-8 text-center">--}}
+                {{--<h2 class="title divider">Animated Fun Facts</h2>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+        {{--<div class="row">--}}
+            {{--<div class="col-md-3 text-center">--}}
+                {{--<div class="counter"> <img src="images/counter/01.png" alt="" /> <span class="timer" data-to="1600" data-speed="10000">1600</span>--}}
+                    {{--<label>Total Members</label>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+            {{--<div class="col-md-3 text-center">--}}
+                {{--<div class="counter"> <img src="images/counter/02.png" alt="" /> <span class="timer" data-to="750" data-speed="10000">750</span>--}}
+                    {{--<label>Online Members</label>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+            {{--<div class="col-md-3 text-center">--}}
+                {{--<div class="counter"> <img src="images/counter/03.png" alt="" /> <span class="timer" data-to="380" data-speed="10000">380</span>--}}
+                    {{--<label>Men Online</label>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+            {{--<div class="col-md-3 text-center">--}}
+                {{--<div class="counter"> <img src="images/counter/04.png" alt="" /> <span class="timer" data-to="370" data-speed="10000">370</span>--}}
+                    {{--<label>Women Online</label>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+    {{--</div>--}}
+{{--</section>--}}
+{{--<section class="page-section-ptb profile-slider pb-3 sm-pb-6">--}}
+    {{--<div class="container">--}}
+        {{--<div class="row justify-content-center mb-2 sm-mb-0">--}}
+            {{--<div class="col-md-8 text-center">--}}
+                {{--<h2 class="title divider">Last Added Profiles</h2>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+        {{--<div class="row">--}}
+            {{--<div class="col-md-12">--}}
+                {{--<div class="owl-carousel" data-nav-arrow="true" data-items="4" data-lg-items="4" data-md-items="3" data-sm-items="2" data-space="30">--}}
+                    {{--<div class="item"> <a href="profile-details.html" class="profile-item">--}}
+                            {{--<div class="profile-image clearfix"><img class="img-fluid w-100" src="images/profile/01.jpg" alt="" /></div>--}}
+                            {{--<div class="profile-details text-center">--}}
+                                {{--<h5 class="title">Bill Nelson</h5>--}}
+                                {{--<span>23 Years Old</span> </div>--}}
+                        {{--</a> </div>--}}
+                    {{--<div class="item"> <a href="profile-details.html" class="profile-item">--}}
+                            {{--<div class="profile-image clearfix"><img class="img-fluid w-100" src="images/profile/02.jpg" alt="" /></div>--}}
+                            {{--<div class="profile-details text-center">--}}
+                                {{--<h5 class="title">Francisco Pierce</h5>--}}
+                                {{--<span>21 Years Old</span> </div>--}}
+                        {{--</a> </div>--}}
+                    {{--<div class="item"> <a href="profile-details.html" class="profile-item">--}}
+                            {{--<div class="profile-image clearfix"><img class="img-fluid w-100" src="images/profile/03.jpg" alt="" /></div>--}}
+                            {{--<div class="profile-details text-center">--}}
+                                {{--<h5 class="title">Nelle Townsend</h5>--}}
+                                {{--<span>19 Years Old</span> </div>--}}
+                        {{--</a> </div>--}}
+                    {{--<div class="item"> <a href="profile-details.html" class="profile-item">--}}
+                            {{--<div class="profile-image clearfix"><img class="img-fluid w-100" src="images/profile/04.jpg" alt="" /></div>--}}
+                            {{--<div class="profile-details text-center">--}}
+                                {{--<h5 class="title">Glen Bell</h5>--}}
+                                {{--<span>20 Years Old</span> </div>--}}
+                        {{--</a> </div>--}}
+                    {{--<div class="item"> <a href="profile-details.html" class="profile-item">--}}
+                            {{--<div class="profile-image clearfix"><img class="img-fluid w-100" src="images/profile/05.jpg" alt="" /></div>--}}
+                            {{--<div class="profile-details text-center">--}}
+                                {{--<h5 class="title">Bill Nelson</h5>--}}
+                                {{--<span>22 Years Old</span> </div>--}}
+                        {{--</a> </div>--}}
+                    {{--<div class="item"> <a href="profile-details.html" class="profile-item">--}}
+                            {{--<div class="profile-image clearfix"><img class="img-fluid w-100" src="images/profile/06.jpg" alt="" /></div>--}}
+                            {{--<div class="profile-details text-center">--}}
+                                {{--<h5 class="title">Francisco Pierce</h5>--}}
+                                {{--<span>23 Years Old</span> </div>--}}
+                        {{--</a> </div>--}}
+                    {{--<div class="item"> <a href="profile-details.html" class="profile-item">--}}
+                            {{--<div class="profile-image clearfix"><img class="img-fluid w-100" src="images/profile/07.jpg" alt="" /></div>--}}
+                            {{--<div class="profile-details text-center">--}}
+                                {{--<h5 class="title">Nelle Townsend</h5>--}}
+                                {{--<span>19 Years Old</span> </div>--}}
+                        {{--</a> </div>--}}
+                    {{--<div class="item"> <a href="profile-details.html" class="profile-item">--}}
+                            {{--<div class="profile-image clearfix"><img class="img-fluid w-100" src="images/profile/08.jpg" alt="" /></div>--}}
+                            {{--<div class="profile-details text-center">--}}
+                                {{--<h5 class="title">Glen Bell</h5>--}}
+                                {{--<span>22 Years Old</span> </div>--}}
+                        {{--</a> </div>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+    {{--</div>--}}
+{{--</section>--}}
+{{--<section class="page-section-ptb grey-bg story-slider">--}}
+    {{--<div class="container">--}}
+        {{--<div class="row justify-content-center mb-2 sm-mb-0">--}}
+            {{--<div class="col-md-8 text-center">--}}
+                {{--<h2 class="title divider">They Found True Love</h2>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+    {{--</div>--}}
+    {{--<div class="owl-carousel" data-nav-dots="true" data-items="5" data-lg-items="4" data-md-items="3" data-sm-items="2" data-space="30">--}}
+        {{--<div class="item">--}}
+            {{--<div class="story-item">--}}
+                {{--<div class="story-image clearfix"><img class="img-fluid w-100" src="images/story/01.jpg" alt="" />--}}
+                    {{--<div class="story-link"><a href="stories-details.html"><i class="glyph-icon flaticon-add"></i></a></div>--}}
+                {{--</div>--}}
+                {{--<div class="story-details text-center">--}}
+                    {{--<h5 class="title divider-3">Quinnel &amp;amp; Jonet</h5>--}}
+                    {{--<div class="about-des mt-3">Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in</div>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+        {{--<div class="item">--}}
+            {{--<div class="story-item">--}}
+                {{--<div class="story-image clearfix"><img class="img-fluid w-100" src="images/story/02.jpg" alt="" />--}}
+                    {{--<div class="story-link"><a href="stories-details.html"><i class="glyph-icon flaticon-add"></i></a></div>--}}
+                {{--</div>--}}
+                {{--<div class="story-details text-center">--}}
+                    {{--<h5 class="title divider-3">Adam &amp;amp; Eve</h5>--}}
+                    {{--<div class="about-des mt-3">Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in</div>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+        {{--<div class="item">--}}
+            {{--<div class="story-item">--}}
+                {{--<div class="story-image clearfix"><img class="img-fluid w-100" src="images/story/03.jpg" alt="" />--}}
+                    {{--<div class="story-link"><a href="stories-details.html"><i class="glyph-icon flaticon-add"></i></a></div>--}}
+                {{--</div>--}}
+                {{--<div class="story-details text-center">--}}
+                    {{--<h5 class="title divider-3">Bella &amp;amp; Edward</h5>--}}
+                    {{--<div class="about-des mt-3">Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in</div>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+        {{--<div class="item">--}}
+            {{--<div class="story-item">--}}
+                {{--<div class="story-image clearfix"><img class="img-fluid w-100" src="images/story/04.jpg" alt="" />--}}
+                    {{--<div class="story-link"><a href="stories-details.html"><i class="glyph-icon flaticon-add"></i></a></div>--}}
+                {{--</div>--}}
+                {{--<div class="story-details text-center">--}}
+                    {{--<h5 class="title divider-3">DEMI &amp;amp; HEAVEN</h5>--}}
+                    {{--<div class="about-des mt-3">Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in</div>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+        {{--<div class="item">--}}
+            {{--<div class="story-item">--}}
+                {{--<div class="story-image clearfix"><img class="img-fluid w-100" src="images/story/05.jpg" alt="" />--}}
+                    {{--<div class="story-link"><a href="stories-details.html"><i class="glyph-icon flaticon-add"></i></a></div>--}}
+                {{--</div>--}}
+                {{--<div class="story-details text-center">--}}
+                    {{--<h5 class="title divider-3">David &amp;amp; Bathsheba</h5>--}}
+                    {{--<div class="about-des mt-3">Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in</div>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+        {{--<div class="item">--}}
+            {{--<div class="story-item">--}}
+                {{--<div class="story-image clearfix"><img class="img-fluid w-100" src="images/story/06.jpg" alt="" />--}}
+                    {{--<div class="story-link"><a href="stories-details.html"><i class="glyph-icon flaticon-add"></i></a></div>--}}
+                {{--</div>--}}
+                {{--<div class="story-details text-center">--}}
+                    {{--<h5 class="title divider-3">Eros &amp;amp; Psychi</h5>--}}
+                    {{--<div class="about-des mt-3">Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in</div>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+        {{--<div class="item">--}}
+            {{--<div class="story-item">--}}
+                {{--<div class="story-image clearfix"><img class="img-fluid w-100" src="images/story/07.jpg" alt="" />--}}
+                    {{--<div class="story-link"><a href="stories-details.html"><i class="glyph-icon flaticon-add"></i></a></div>--}}
+                {{--</div>--}}
+                {{--<div class="story-details text-center">--}}
+                    {{--<h5 class="title divider-3">Hector &amp;amp; Andromache</h5>--}}
+                    {{--<div class="about-des mt-3">Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in</div>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+        {{--<div class="item">--}}
+            {{--<div class="story-item">--}}
+                {{--<div class="story-image clearfix"><img class="img-fluid w-100" src="images/story/08.jpg" alt="" />--}}
+                    {{--<div class="story-link"><a href="stories-details.html"><i class="glyph-icon flaticon-add"></i></a></div>--}}
+                {{--</div>--}}
+                {{--<div class="story-details text-center">--}}
+                    {{--<h5 class="title divider-3">Bonnie &amp;amp; Clyde</h5>--}}
+                    {{--<div class="about-des mt-3">Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in</div>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+        {{--<div class="item">--}}
+            {{--<div class="story-item">--}}
+                {{--<div class="story-image clearfix"><img class="img-fluid w-100" src="images/story/09.jpg" alt="" />--}}
+                    {{--<div class="story-link"><a href="stories-details.html"><i class="glyph-icon flaticon-add"></i></a></div>--}}
+                {{--</div>--}}
+                {{--<div class="story-details text-center">--}}
+                    {{--<h5 class="title divider-3">Henry &amp;amp; Clare</h5>--}}
+                    {{--<div class="about-des mt-3">Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in</div>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+        {{--<div class="item">--}}
+            {{--<div class="story-item">--}}
+                {{--<div class="story-image clearfix"><img class="img-fluid w-100" src="images/story/10.jpg" alt="" />--}}
+                    {{--<div class="story-link"><a href="stories-details.html"><i class="glyph-icon flaticon-add"></i></a></div>--}}
+                {{--</div>--}}
+                {{--<div class="story-details text-center">--}}
+                    {{--<h5 class="title divider-3">Casanova &amp;amp; Francesca</h5>--}}
+                    {{--<div class="about-des mt-3">Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in</div>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+        {{--<div class="item">--}}
+            {{--<div class="story-item">--}}
+                {{--<div class="story-image clearfix"><img class="img-fluid w-100" src="images/story/11.jpg" alt="" />--}}
+                    {{--<div class="story-link"><a href="stories-details.html"><i class="glyph-icon flaticon-add"></i></a></div>--}}
+                {{--</div>--}}
+                {{--<div class="story-details text-center">--}}
+                    {{--<h5 class="title divider-3">Jack &amp;amp; Sally</h5>--}}
+                    {{--<div class="about-des mt-3">Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in</div>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+        {{--<div class="item">--}}
+            {{--<div class="story-item">--}}
+                {{--<div class="story-image clearfix"><img class="img-fluid w-100" src="images/story/12.jpg" alt="" />--}}
+                    {{--<div class="story-link"><a href="stories-details.html"><i class="glyph-icon flaticon-add"></i></a></div>--}}
+                {{--</div>--}}
+                {{--<div class="story-details text-center">--}}
+                    {{--<h5 class="title divider-3">James &amp;amp; Lilly</h5>--}}
+                    {{--<div class="about-des mt-3">Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in</div>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+    {{--</div>--}}
+{{--</section>--}}
+{{--<section class="page-section-ptb text-white bg-overlay-black-70 bg text-center" style="background: url(images/bg/bg-4.jpg) no-repeat 0 0; background-size: cover;">--}}
+    {{--<div class="container">--}}
+        {{--<div class="row justify-content-center mb-5 sm-mb-3">--}}
+            {{--<div class="col-md-10">--}}
+                {{--<h2 class="title divider mb-3">Nothing say better, then a video</h2>--}}
+                {{--<p class="lead">Eum cu tantas legere complectitur, hinc utamur ea eam. Eum patrioque mnesarchum eu, diam erant convenire et vis. Et essent evertitur sea, vis cu ubique referrentur, sed eu dicant expetendis.</p>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+        {{--<div class="row">--}}
+            {{--<div class="col-md-12">--}}
+                {{--<h5 class="title mb-3">see video</h5>--}}
+                {{--<div class="popup-gallery"> <a href="https://www.youtube.com/embed/8xg3vE8Ie_E" class="play-btn popup-youtube"> <span><i class="glyph-icon flaticon-play-button"></i></span></a> </div>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+    {{--</div>--}}
+{{--</section>--}}
 <section class="page-section-ptb pb-2 sm-pb-0 dark-bg text-white" style="background: url(images/pattern/03.png) no-repeat 0 0; background-size: cover;">
     <div class="container">
         <div class="row justify-content-center">
@@ -418,7 +418,7 @@
         <div class="row mb-5 sm-mb-2">
             <div class="col-lg-3 col-md-6">
                 <div class="team team-1">
-                    <div class="team-images"> <img class="img-fluid" src="images/team/team1.png" alt="" /> </div>
+                    <div class="team-images"> <img class="img-fluid" src="images/team/team1.jpg" alt="" /> </div>
                     <div class="team-description">
                         <div class="team-tilte">
                             <h5 class="title"><a href="team-single.html">Bill Nelson</a></h5>
@@ -437,7 +437,7 @@
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="team team-1">
-                    <div class="team-images"> <img class="img-fluid" src="images/team/team2.png" alt="" /> </div>
+                    <div class="team-images"> <img class="img-fluid" src="images/team/team2.jpg" alt="" /> </div>
                     <div class="team-description">
                         <div class="team-tilte">
                             <h5 class="title"><a href="team-single.html">Francisco Pierce</a></h5>
@@ -456,7 +456,7 @@
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="team team-1">
-                    <div class="team-images"> <img class="img-fluid" src="images/team/team3.png" alt="" /> </div>
+                    <div class="team-images"> <img class="img-fluid" src="images/team/team3.jpg" alt="" /> </div>
                     <div class="team-description">
                         <div class="team-tilte">
                             <h5 class="title"><a href="team-single.html">Nelle Townsend</a></h5>
@@ -475,7 +475,7 @@
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="team team-1">
-                    <div class="team-images"> <img class="img-fluid" src="images/team/team4.png" alt="" /> </div>
+                    <div class="team-images"> <img class="img-fluid" src="images/team/team4.jpg" alt="" /> </div>
                     <div class="team-description">
                         <div class="team-tilte">
                             <h5 class="title"><a href="team-single.html">Glen Bell</a></h5>
@@ -519,12 +519,12 @@
 <!--=================================
  page-section -->
 
-<section class="py-5 action-box-img bg text-center text-white bg-overlay-black-80" style="background-image:url(images/bg/bg-4.jpg)">
+<section class="py-5 action-box-img bg text-center text-white bg-overlay-black-80">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-10">
-                <h5 class="pb-2">Want to hear more story, subscribe for our newsletter</h5>
-                <a class="button  btn-lg btn-theme full-rounded animated right-icn"><span>Subscribe<i class="glyph-icon flaticon-hearts" aria-hidden="true"></i></span></a> </div>
+                <h5 class="pb-2">What are you waiting for? Join us now!</h5>
+                <a href="/register" class="button  btn-lg btn-theme full-rounded animated right-icn"><span>Register<i class="glyph-icon flaticon-hearts" aria-hidden="true"></i></span></a> </div>
         </div>
     </div>
 </section>

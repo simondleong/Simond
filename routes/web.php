@@ -50,8 +50,8 @@ Route::group(['middleware' => ['AuthUser']], function () {
             Route::post('/password', 'UserController@updatePassword');
 
             /* homepage */
-            Route::get('/home', function () {
-                return view('homepage');
+            Route::get('/find', function () {
+                return view('find');
             });
 
             /* match */

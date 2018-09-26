@@ -102,7 +102,7 @@
                                                    value="{{ $data['config']['Met'] }}">
                                             <button type="submit" class="btn btn-success">I have met my date</button>
                                         </form>
-                                        <form action="/date/{{ $date->id }}/update-receiver" method="POST">
+                                        <form class="mb-2" action="/date/{{ $date->id }}/update-receiver" method="POST">
                                             {{ csrf_field() }}
                                             <input type="hidden" name="receiver_confirmation"
                                                    value="{{ $data['config']['No Meeting'] }}">
@@ -123,7 +123,7 @@
                                                    value="{{ $data['config']['Met'] }}">
                                             <button type="submit" class="btn btn-success">I have met my date</button>
                                         </form>
-                                        <form action="/date/{{ $date->id }}/update-sender" method="POST">
+                                        <form class="mb-2" action="/date/{{ $date->id }}/update-sender" method="POST">
                                             {{ csrf_field() }}
                                             <input type="hidden" name="sender_confirmation"
                                                    value="{{ $data['config']['No Meeting'] }}">

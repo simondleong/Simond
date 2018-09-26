@@ -27,38 +27,38 @@
                         <div class="address-block"> <i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:+000123456789">+000 - 123 - 456 - 789</a> </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-12 mb-3">
-                        <h4 class="title divider-3">We Love Talking</h4>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div id="formmessage" style="display:none">Success/Error Message Goes Here</div>
-                        <form id="contactform" class="main-form" method="post" action="php/contact-form.php">
-                            <div class="form-group half-group">
-                                <div class="input-group">
-                                    <input id="name" placeholder="Your name here" class="form-control" name="name" type="text">
-                                </div>
-                            </div>
-                            <div class="form-group half-group">
-                                <div class="input-group">
-                                    <input placeholder="Your mail here" class="form-control" name="email" type="email">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="input-group">
-                                    <textarea class="form-control input-message" placeholder="Your message here*" rows="7" name="message"></textarea>
-                                </div>
-                            </div>
-                            <div class="form-group sm-mb-0">
-                                <input type="hidden" name="action" value="sendEmail"/>
-                                <button id="submit" name="submit" type="submit" value="Send" class="button btn-lg btn-theme full-rounded animated right-icn"><span>Submit Now<i class="glyph-icon flaticon-hearts" aria-hidden="true"></i></span></button>
-                            </div>
-                        </form>
-                        <div id="ajaxloader" style="display:none"><img class="center-block" src="{{ asset('images/loading.gif') }}" alt="" /></div>
-                    </div>
-                </div>
+                {{--<div class="row">--}}
+                    {{--<div class="col-md-12 mb-3">--}}
+                        {{--<h4 class="title divider-3">We Love Talking</h4>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+                {{--<div class="row">--}}
+                    {{--<div class="col-md-12">--}}
+                        {{--<div id="formmessage" style="display:none">Success/Error Message Goes Here</div>--}}
+                        {{--<form id="contactform" class="main-form" method="post" action="php/contact-form.php">--}}
+                            {{--<div class="form-group half-group">--}}
+                                {{--<div class="input-group">--}}
+                                    {{--<input id="name" placeholder="Your name here" class="form-control" name="name" type="text">--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
+                            {{--<div class="form-group half-group">--}}
+                                {{--<div class="input-group">--}}
+                                    {{--<input placeholder="Your mail here" class="form-control" name="email" type="email">--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
+                            {{--<div class="form-group">--}}
+                                {{--<div class="input-group">--}}
+                                    {{--<textarea class="form-control input-message" placeholder="Your message here*" rows="7" name="message"></textarea>--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
+                            {{--<div class="form-group sm-mb-0">--}}
+                                {{--<input type="hidden" name="action" value="sendEmail"/>--}}
+                                {{--<button id="submit" name="submit" type="submit" value="Send" class="button btn-lg btn-theme full-rounded animated right-icn"><span>Submit Now<i class="glyph-icon flaticon-hearts" aria-hidden="true"></i></span></button>--}}
+                            {{--</div>--}}
+                        {{--</form>--}}
+                        {{--<div id="ajaxloader" style="display:none"><img class="center-block" src="{{ asset('images/loading.gif') }}" alt="" /></div>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
             </div>
         </div>
     </div>
