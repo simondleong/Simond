@@ -97,6 +97,7 @@ class PaymentController extends Controller
                 $relatedResources = $transactions[0]->getRelatedResources();
                 $sale = $relatedResources[0]->getSale();
 
+                $this->createChatObject($id);
                 $this->updateDateObject($id, $sale);
 
                 return redirect('/profile/date/'.$id)->with('flash_success',
@@ -296,5 +297,17 @@ class PaymentController extends Controller
         $date->sale_id  = $sale->getId();
         $date->payment_status = $this->config['Paid'];
         $date->save();
+    }
+
+
+    /*
+     * Create Chat Object
+     */
+    private function createChatObject($id) {
+        $date = $this->date->find($id);
+
+        $chat = $date->chat()->create([
+            'date_id' => $date->id
+        ]);
     }
 }
