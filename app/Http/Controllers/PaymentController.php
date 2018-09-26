@@ -75,8 +75,12 @@ class PaymentController extends Controller
     /*
      * Execute or cancel payment
      */
-    public function executePayment($id) {
+    public function executePayment(Request $request, $id) {
         $paymentID = session()->get('payment_id');
+
+        if (($paymentID == null) || ($paymentID == '')) {
+            $paymentID = $request->paymentId;
+        }
 
         session()->forget('payment_id');
         if (empty(Input::get('PayerID')) || empty(Input::get('token'))) {
