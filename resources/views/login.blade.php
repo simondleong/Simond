@@ -32,8 +32,6 @@
                                 <input id="Password" class="Password" type="password" placeholder="Password" name="password" required>
                             </div>
                         </div>
-                        <div class="section-field text-uppercase"> <a href="#" class="float-right text-white">Forgot Password?</a> </div>
-                        <div class="clearfix"></div>
                         <div class="section-field text-uppercase text-right mt-2"> <button class="button  btn-lg btn-theme full-rounded animated right-icn" type="submit"><span>sign in<i class="glyph-icon flaticon-hearts" aria-hidden="true"></i></span></button> </div>
                         <div class="clearfix"></div>
                         <div class="section-field mt-2 text-center text-white">

@@ -143,7 +143,7 @@ class UserController extends Controller
                 session()->put('user', $user);
 
                 if ($user->preference) {
-                    return redirect('/home');
+                    return redirect('/');
                 }
 
                 session()->flash('flash_success', 'Please enter your preferences.');
