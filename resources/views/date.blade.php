@@ -95,6 +95,7 @@
 
                                 <!-- if date has been paid -->
                                     @if (($date->status == $data['config']['Accepted']) && ($date->payment_status != $data['config']['Unpaid']))
+                                        <a class="btn btn-primary mb-2" href="/chat/{{ $date->chat->id }}">Chat</a>
                                         <form class="mb-2" action="/date/{{ $date->id }}/update-receiver" method="POST">
                                             {{ csrf_field() }}
                                             <input type="hidden" name="receiver_confirmation"
@@ -115,6 +116,7 @@
 
                                 <!-- if date has been paid -->
                                     @if (($date->status == $data['config']['Accepted']) && ($date->payment_status == $data['config']['Paid']))
+                                        <a class="btn btn-primary mb-2" href="/chat/{{ $date->chat->id }}">Chat</a>
                                         <form class="mb-2" action="/date/{{ $date->id }}/update-sender" method="POST">
                                             {{ csrf_field() }}
                                             <input type="hidden" name="sender_confirmation"
