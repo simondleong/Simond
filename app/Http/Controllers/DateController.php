@@ -5,16 +5,18 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Date as Date;
 use App\Models\User as User;
+use App\Models\Chat as Chat;
 use Illuminate\Support\Facades\Config;
 
 class DateController extends Controller
 {
-    protected $user, $date;
+    protected $user, $date, $chat;
     protected $config, $city, $gender, $sexual_preference, $personality_type, $age, $date_status;
 
-    public function __construct(User $user, Date $date) {
+    public function __construct(User $user, Date $date, Chat $chat) {
         $this->user = $user;
         $this->date = $date;
+        $this->chat = $chat;
 
         $this->config   = Config::get('constants');
         $this->gender   = $this->config['gender'];
@@ -103,6 +105,21 @@ class DateController extends Controller
                 'personality_type' => $this->personality_type,
                 'age' => $this->age
             ]);
+    }
+
+
+    /**
+     * @param Request $request
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    public function viewChats() {
+        $user = session()->get('user');
+
+        $dates = $this->date->where('sender_id', $user->id)
+                            ->orWhere('receiver_id', $user->id)
+                            ->get();
+
+        return view('chatList')->with('dates', $dates);
     }
 
 

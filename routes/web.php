@@ -74,6 +74,7 @@ Route::group(['middleware' => ['AuthUser']], function () {
             Route::post('/date/{id}/update-receiver', 'PaymentController@updateReceiver');
 
             /* messages / chats */
+            Route::get('/chats', 'DateController@viewChats');
             Route::get('/chat/{id}', 'MessageController@index');
             Route::get('/messages/{id}', 'MessageController@fetchMessages');
             Route::post('/messages/{id}', 'MessageController@sendMessage');
