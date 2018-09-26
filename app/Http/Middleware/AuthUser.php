@@ -16,7 +16,7 @@ class AuthUser
     public function handle($request, Closure $next)
     {
         if (session()->has('user'))
-                return $next($request);
+            return $next($request);
         return redirect('/login')->with('flash_error', 'You are not logged in.');
     }
 }
