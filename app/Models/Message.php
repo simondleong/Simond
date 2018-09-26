@@ -4,12 +4,15 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Date extends Model
+class Message extends Model
 {
-    protected $table = 'dates';
-    protected $fillable = ['sender_id', 'receiver_id', 'status', 'sale_id', 'payment_status',
-        'sender_confirmation', 'receiver_confirmation'];
+    protected $table = 'messages';
+    protected $fillable = ['chat_id', 'sender_id', 'receiver_id', 'message'];
     protected $guarded = [];
+
+    public function chat() {
+        return $this->belongsTo('App\Models\Chat', 'chat_id', 'id');
+    }
 
     public function sender() {
         return $this->belongsTo('App\Models\User', 'sender_id', 'id');
@@ -17,9 +20,5 @@ class Date extends Model
 
     public function receiver() {
         return $this->belongsTo('App\Models\User', 'receiver_id', 'id');
-    }
-
-    public function chat() {
-        return $this->hasOne('App\Models\Chat', 'date_id', 'id');
     }
 }
