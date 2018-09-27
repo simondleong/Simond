@@ -40,6 +40,16 @@ Run database seed (optional)
 php artisan db:seed
 ```
 
+Install front end dependencies for the first time
+```
+npm install
+```
+
+Compile Javascript files (after modifying scripts in resources/assets/js)
+```
+npm run dev
+```
+
 Run development server
 ```
 php artisan serve
@@ -60,6 +70,7 @@ composer dump-autoload
 ## Built With
 
 * [Laravel](https://laravel.com) - The PHP Framework For Web Artisans
+* [VueJS](https://vuejs.org/) - The Progressive Javascript Framework
 * [Cupid Love](https://themeforest.net/item/cupid-love-dating-website-html5-template/20097943) - HTML 5 Template
 * [Composer](https://getcomposer.org/) - Dependency Manager for PHP
 * [PayPal SDK](https://paypal.github.io/PayPal-PHP-SDK/) - PayPal PHP SDK
