@@ -8,6 +8,7 @@ These instructions will get you a copy of the project up and running on your loc
 You need to have these installed in your system:
 
 * [Laravel](https://www.laravel.com) - PHP Framework
+* [npm](https://www.npmjs.com/) - Javascript Package Manager
 * [Composer](https://getcomposer.org/) - Dependency Manager for PHP
 * A web development server (we use [xampp](https://www.apachefriends.org/index.html))
 
