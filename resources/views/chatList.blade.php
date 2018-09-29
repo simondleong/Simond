@@ -18,9 +18,9 @@
                 @foreach ($chats as $chat)
                     <div class="col-12">
                         <a href="/chat/{{ $chat->id }}">
-                            <div class="row mb-3 pt-2 pb-2 border border-secondary">
+                            <div class="row mb-3 pt-2 pb-2 profile-item-hover border border-secondary">
                                 <div class="col-4">
-                                    <div class="profile-image clearfix">
+                                    <div class="chat-profile-image clearfix">
                                         @if ($user->id == $chat->date->receiver->id)
                                             @if (!count($chat->date->sender->photos))
                                                 @if ($gender[$chat->date->sender->gender] == 'Male')

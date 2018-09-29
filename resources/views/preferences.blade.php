@@ -49,16 +49,16 @@
                                     @if (session()->get('user')->preference != null)
                                         @if (session()->get('user')->preference->gender_weight == $data['imp_value'][$key])
                                             <input class="form-check-input" name="gender_weight" type="radio"
-                                                   id="importance{{ $key }}" value="{{ $data['imp_value'][$key] }}" checked>
+                                                   id="gender{{ $key }}" value="{{ $data['imp_value'][$key] }}" checked>
                                         @else
                                             <input class="form-check-input" name="gender_weight" type="radio"
-                                                   id="importance{{ $key }}" value="{{ $data['imp_value'][$key] }}">
+                                                   id="gender{{ $key }}" value="{{ $data['imp_value'][$key] }}">
                                         @endif
                                     @else
                                         <input class="form-check-input" name="gender_weight" type="radio"
-                                               id="importance{{ $key }}" value="{{ $data['imp_value'][$key] }}">
+                                               id="gender{{ $key }}" value="{{ $data['imp_value'][$key] }}">
                                     @endif
-                                    <label class="form-check-label" for="importance{{ $key }}">
+                                    <label class="form-check-label" for="gender{{ $key }}">
                                         {{ $importance }}
                                     </label>
                                 </div>
@@ -86,16 +86,16 @@
                                     @if (session()->get('user')->preference != null)
                                         @if (session()->get('user')->preference->sexual_weight == $data['imp_value'][$key])
                                             <input class="form-check-input" name="sexual_weight" type="radio"
-                                                   id="importance{{ $key }}" value="{{ $data['imp_value'][$key] }}" checked>
+                                                   id="sexual{{ $key }}" value="{{ $data['imp_value'][$key] }}" checked>
                                         @else
                                             <input class="form-check-input" name="sexual_weight" type="radio"
-                                                   id="importance{{ $key }}" value="{{ $data['imp_value'][$key] }}">
+                                                   id="sexual{{ $key }}" value="{{ $data['imp_value'][$key] }}">
                                         @endif
                                     @else
                                         <input class="form-check-input" name="sexual_weight" type="radio"
-                                               id="importance{{ $key }}" value="{{ $data['imp_value'][$key] }}">
+                                               id="sexual{{ $key }}" value="{{ $data['imp_value'][$key] }}">
                                     @endif
-                                    <label class="form-check-label" for="importance{{ $key }}">
+                                    <label class="form-check-label" for="sexual{{ $key }}">
                                         {{ $importance }}
                                     </label>
                                 </div>
@@ -123,16 +123,16 @@
                                     @if (session()->get('user')->preference != null)
                                         @if (session()->get('user')->preference->personality_weight == $data['imp_value'][$key])
                                             <input class="form-check-input" name="personality_weight" type="radio"
-                                                   id="importance{{ $key }}" value="{{ $data['imp_value'][$key] }}" checked>
+                                                   id="personality{{ $key }}" value="{{ $data['imp_value'][$key] }}" checked>
                                         @else
                                             <input class="form-check-input" name="personality_weight" type="radio"
-                                                   id="importance{{ $key }}" value="{{ $data['imp_value'][$key] }}">
+                                                   id="personality{{ $key }}" value="{{ $data['imp_value'][$key] }}">
                                         @endif
                                     @else
                                         <input class="form-check-input" name="personality_weight" type="radio"
-                                               id="importance{{ $key }}" value="{{ $data['imp_value'][$key] }}">
+                                               id="personality{{ $key }}" value="{{ $data['imp_value'][$key] }}">
                                     @endif
-                                    <label class="form-check-label" for="importance{{ $key }}">
+                                    <label class="form-check-label" for="personality{{ $key }}">
                                         {{ $importance }}
                                     </label>
                                 </div>

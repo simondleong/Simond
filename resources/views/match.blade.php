@@ -8,7 +8,7 @@
                 @foreach($matches as $match)
                     <div class="col-md-4 col-sm-12 col-xs-12 mb-4">
                         <div class="profile-item-hover">
-                            <a href="profile/details/{{ $match->id }}" class="profile-item" target="_blank">
+                            <a href="profile/details/{{ $match->id }}" class="profile-item">
                                 <div class="profile-image clearfix">
                                     @if (!count($match->photos))
                                         @if ($gender[$match->gender] == 'Male')

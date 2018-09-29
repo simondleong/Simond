@@ -35,8 +35,11 @@ class DateController extends Controller
         $receiver   = $request->id;
         $user       = session()->get('user');
 
-        if ($this->activeDateExists($user, $receiver)) {
-            return redirect()->back()->with('flash_error', 'You have an active date/request with this user');
+        $exist      = $this->activeDateExists($user, $receiver);
+        if ($exist) {
+            return redirect()->back()
+                ->with('flash_error', 'You have an active date/request with this user')
+                ->with('active_id', $exist);
         }
 
         $date       = new Date();
@@ -157,7 +160,7 @@ class DateController extends Controller
         if ($sent) {
             foreach ($sent as $s) {
                 if ($s->status < 2) {
-                    return true;
+                    return $s->id;
                 }
             }
         }
@@ -165,7 +168,7 @@ class DateController extends Controller
         if ($received) {
             foreach ($received as $s) {
                 if ($s->status < 2) {
-                    return true;
+                    return $s->id;
                 }
             }
         }

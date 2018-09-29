@@ -15,6 +15,13 @@
                 <div class="row mb-3">
                     <div class="col-12 text-center alert alert-danger">
                         {{ session()->get('flash_error') }}
+                        @if (session()->has('active_id'))
+                            <br>
+                            <a href="/profile/date/{{ session()->get('active_id') }}"
+                                style="color: blue;">
+                                Go to Date
+                            </a>
+                        @endif
                     </div>
                 </div>
             @endif

@@ -19,7 +19,7 @@
                 <div class="col-md-4 col-sm-12 col-xs-12 mb-4">
                     <div class="profile-item-hover">
                         @if ((($date->status) % 2 == 1) || ($date->status == 0))
-                            <a href="/profile/date/{{ $date->id }}" class="profile-item-hover" target="_blank">
+                            <a href="/profile/date/{{ $date->id }}" class="profile-item-hover">
                         @endif
                             <div class="profile-image clearfix">
                                 @if (!count($date->receiver->photos))

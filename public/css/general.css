@@ -863,8 +863,10 @@ form .form-group textarea { resize: vertical; }
   Testimonials
 -----------------------------------------------------------------------*/
 .testimonial {position: relative; padding:0 50px 0 70px; font-family: 'Montserrat', sans-serif; color:#656565; font-weight:400; line-height:24px; text-align:center;}
-.testimonial-avatar{position: absolute; left: 50%; margin-left:-55px; top:-45px; width:110px; height:110px;}
-.testimonial-avatar img{border:4px solid #ffbc05; max-width:100%; border-radius: 50%;}
+.testimonial-avatar{position: absolute; left: 50%; margin-left:-55px; top:-45px; height:110px !important;
+    width:110px !important; border-radius:50%;}
+.testimonial-avatar img{position:relative; width:100% !important; height:100% !important;
+    object-fit:cover; border-radius:50%; border:4px solid #ffbc05;}
 
 .author-info{font-size:16px; color:#000; text-transform:uppercase; margin-top:20px; position:relative;}
 .author-info strong{font-weight:500;}
@@ -975,6 +977,8 @@ form .form-group textarea { resize: vertical; }
 .profile-item-hover:hover { -webkit-box-shadow: 0 0 8px 5px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 0 8px 5px rgba(0, 0, 0, 0.2); box-shadow: 0 0 8px 5px rgba(0, 0, 0, 0.2);}
 .profile-item-hover-1 { -webkit-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
 .profile-item-hover-1:hover { -ms-transform: translateY(-15px); -o-transform: translateY(-15px); -moz-transform: translateY(-15px); -webkit-transform: translateY(-15px); transform: translateY(-15px); }
+.profile-image img {height: 360px !important; width: 100%; object-fit: cover;}
+.chat-profile-image img {height: 120px !important; width: auto; object-fit: cover;}
 
 /*----------------------------------------------------------------------
   Banner-Form
@@ -1510,7 +1514,7 @@ form .form-group .checkbox label, form .form-group .radio label { padding-left: 
     /*-------------------------------------------------
       Profile
     ---------------------------------------------------*/
-    .profile-image img{width: 100%;}
+    .profile-image img{height: 400px; width: 100%;}
     .profile-table {overflow-x: scroll;}
     .profile-table > li {width: 220%;}
 
