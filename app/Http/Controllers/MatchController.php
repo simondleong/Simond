@@ -74,11 +74,13 @@ class MatchController extends Controller
 
         $currArr    = [];
         foreach($users as $u) {
-            $percentage = $this->calculate($user, $u);
-            if ($percentage > $this->borderline) {
-                $curr = $u;
-                $curr->setAttribute('percentage', $percentage);
-                array_push($currArr, $curr);
+            if ($u->preference) {
+                $percentage = $this->calculate($user, $u);
+                if ($percentage > $this->borderline) {
+                    $curr = $u;
+                    $curr->setAttribute('percentage', $percentage);
+                    array_push($currArr, $curr);
+                }
             }
         }
         $unsorted   = collect($currArr);
