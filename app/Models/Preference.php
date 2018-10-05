@@ -7,8 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 class Preference extends Model
 {
     protected $table = 'preferences';
-    protected $fillable = ['user_id', 'personality_type', 'personality_weight', 'age', 'age_weight',
-                            'city', 'city_weight'];
+    protected $fillable = ['user_id', 'gender', 'gender_weight', 'sexual_preference', 'sexual_weight',
+                            'personality_type', 'personality_weight', 'age', 'age_weight', 'city', 'city_weight'];
     protected $guarded = [];
 
     public function user() {
