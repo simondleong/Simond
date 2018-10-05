@@ -10,6 +10,16 @@
 
             <div class="col-md-8 col-sm-12 col-xs-12">
 
+                @if ($errors->any())
+                    <div class="row justify-content-center">
+                        <div class="col-md-10 col-sm-10 col-xs-10 mb-sm-3 alert alert-danger text-center">
+                            @foreach ($errors->all() as $error)
+                                {{ $error }}
+                            @endforeach
+                        </div>
+                    </div>
+                @endif
+
                 @if (session()->has('flash_error'))
                     <div class="row justify-content-center">
                         <div class="col-md-10 col-sm-10 col-xs-10 mb-sm-3 alert alert-danger text-center">

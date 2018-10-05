@@ -16,7 +16,7 @@
                             <li class="{{ Request::is('/') ? "active" : null }}">
                                 <a href="/">Home</a>
                             </li>
-                            <li class="{{ Request::is('/find') ? "active" : null }}">
+                            <li class="{{ Request::is('find') ? "active" : null }}">
                                 <a href="/find">Find Matches</a>
                             </li>
                             <li class="{{ Request::is('profile') ? "active" :

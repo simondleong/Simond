@@ -54,6 +54,21 @@ class PreferenceController extends Controller
     public function update(Request $request) {
         $user = session()->get('user');
 
+
+
+        $this->validate($request, [
+            'gender'            => 'required|integer',
+            'sexual_preference' => 'required|integer',
+            'personality_type'  => 'required|integer',
+            'age'               => 'required|integer',
+            'city'              => 'required|integer',
+            'gender_weight'     => 'required|integer',
+            'sexual_weight'     => 'required|integer',
+            'personality_weight'=> 'required|integer',
+            'age_weight'        => 'required|integer',
+            'city_weight'       => 'required|integer',
+        ]);
+
         if ($user->preference) {
             // update existing
 
