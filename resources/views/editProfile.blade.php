@@ -40,13 +40,15 @@
                         <div class="section-field mb-3">
                             <div class="field-widget"> <i class="glyph-icon flaticon-user"></i>
                                 <input id="Firstname" name="first_name" class="web" type="text"
-                                       value="{{ session()->get('user')->first_name }}" placeholder="First name" required>
+                                       value="{{ session()->get('user')->first_name }}" placeholder="First name"
+                                       pattern="[a-zA-Z]+" required>
                             </div>
                         </div>
                         <div class="section-field mb-3">
                             <div class="field-widget"> <i class="glyph-icon flaticon-user"></i>
                                 <input id="Lastname" name="last_name" class="web" type="text"
-                                       value="{{ session()->get('user')->last_name }}" placeholder="Last name" required>
+                                       value="{{ session()->get('user')->last_name }}" placeholder="Last name"
+                                       pattern="[a-zA-Z]+" required>
                             </div>
                         </div>
                         <div class="section-field mb-3">
@@ -58,7 +60,7 @@
                         <div class="section-field mb-3">
                             <div class="field-widget"> <i class="fa fa-mobile"></i>
                                 <input id="PhoneNumber" class="web" type="text" placeholder="Phone Number" name="phone"
-                                       value="{{ session()->get('user')->phone }}" required>
+                                       value="{{ session()->get('user')->phone }}" pattern="[0-9]+" required>
                             </div>
                         </div>
                         <div class="section-field mb-3">

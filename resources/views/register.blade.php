@@ -8,6 +8,16 @@
 <section class="login-form dark-bg page-section-ptb bg-overlay-black-30 bg" style="background: url(images/pattern/02.png) no-repeat 0 0;">
     <div class="container">
 
+        @if ($errors->any())
+            <div class="row justify-content-center">
+                <div class="col-md-10 col-sm-10 col-xs-10 mb-sm-3 alert alert-danger text-center">
+                    @foreach ($errors->all() as $error)
+                        {{ $error }}
+                    @endforeach
+                </div>
+            </div>
+        @endif
+
         @if (session()->has('flash_error'))
             <div class="row justify-content-center">
                 <div class="col-md-6 alert alert-danger text-center">
@@ -24,12 +34,14 @@
                         {{ csrf_field() }}
                         <div class="section-field mb-3">
                             <div class="field-widget"> <i class="glyph-icon flaticon-user"></i>
-                                <input id="Firstname" name="first_name" class="web" type="text" placeholder="First name" required>
+                                <input id="Firstname" name="first_name" class="web" type="text" placeholder="First name"
+                                       pattern="[a-zA-Z]+" required>
                             </div>
                         </div>
                         <div class="section-field mb-3">
                             <div class="field-widget"> <i class="glyph-icon flaticon-user"></i>
-                                <input id="Lastname" name="last_name" class="web" type="text" placeholder="Last name" required>
+                                <input id="Lastname" name="last_name" class="web" type="text" placeholder="Last name"
+                                       pattern="[a-zA-Z]+" required>
                             </div>
                         </div>
                         <div class="section-field mb-3">
@@ -49,7 +61,8 @@
                         </div>
                         <div class="section-field mb-3">
                             <div class="field-widget"> <i class="fa fa-mobile"></i>
-                                <input id="PhoneNumber" class="web" type="text" placeholder="Phone Number" name="phone" required>
+                                <input id="PhoneNumber" class="web" type="text" placeholder="Phone Number" name="phone"
+                                       pattern="[0-9]+" required>
                             </div>
                         </div>
                         <div class="section-field mb-3">
