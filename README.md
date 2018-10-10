@@ -76,3 +76,15 @@ composer dump-autoload
 * [Composer](https://getcomposer.org/) - Dependency Manager for PHP
 * [PayPal SDK](https://paypal.github.io/PayPal-PHP-SDK/) - PayPal PHP SDK
 * [Pusher](https://pusher.com) - Hosted APIs to Build Realtime Apps with Less Code
+
+## Official Documentation
+
+Documentation for the framework can be found on [Laravel website](http://laravel.com/docs).
+
+## Contributing
+
+Contribution guide can be found on [Laravel documentation](http://laravel.com/docs/contributions).
+
+## License
+
+The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
